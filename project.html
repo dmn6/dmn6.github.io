@@ -2,17 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.475">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Name 1">
-<meta name="author" content="Name 2">
-<meta name="author" content="Name 3">
-<meta name="author" content="Name 4">
-<meta name="author" content="Name 5">
+<meta name="author" content="Sianny Ortiz">
+<meta name="author" content="Dominic Nicastro">
+<meta name="author" content="Matthew Velez-Brand">
+<meta name="dcterms.date" content="2023-12-18">
 
-<title>YOUR NAME - DANL Project</title>
+<title>DANL Project: Team 19</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,9 +21,10 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -51,165 +51,100 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
-    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 20,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
-  }
-}</script>
+<script src="quarto-template-2_files/libs/clipboard/clipboard.min.js"></script>
+<script src="quarto-template-2_files/libs/quarto-html/quarto.js"></script>
+<script src="quarto-template-2_files/libs/quarto-html/popper.min.js"></script>
+<script src="quarto-template-2_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="quarto-template-2_files/libs/quarto-html/anchor.min.js"></script>
+<link href="quarto-template-2_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="quarto-template-2_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="quarto-template-2_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="quarto-template-2_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="quarto-template-2_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
-<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
-<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+<link href="quarto-template-2_files/libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="quarto-template-2_files/libs/pagedtable-1.1/js/pagedtable.js"></script>
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body>
 
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">YOUR NAME</span>
-    </a>
-  </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./project.html" aria-current="page">
- <span class="menu-text">Project</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./blog-listing.html">
- <span class="menu-text">Blog</span></a>
-  </li>  
-</ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
-              <div id="quarto-search" class="" title="Search"></div>
-          </div> <!-- /navcollapse -->
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of Contents</h2>
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
    
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data"><span class="header-section-number">2</span> Data</a>
   <ul class="collapse">
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="toc-section-number">1</span>  Introduction</a></li>
-  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data"><span class="toc-section-number">2</span>  Data</a>
-  <ul class="collapse">
-  <li><a href="#summary-statistics" id="toc-summary-statistics" class="nav-link" data-scroll-target="#summary-statistics"><span class="toc-section-number">2.1</span>  Summary Statistics</a></li>
-  <li><a href="#mpg-and-a-type-of-cars" id="toc-mpg-and-a-type-of-cars" class="nav-link" data-scroll-target="#mpg-and-a-type-of-cars"><span class="toc-section-number">2.2</span>  MPG and a Type of Cars</a></li>
+  <li><a href="#data-summary" id="toc-data-summary" class="nav-link" data-scroll-target="#data-summary"><span class="header-section-number">2.1</span> Data Summary</a></li>
+  <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization"><span class="header-section-number">2.2</span> Data Visualization</a></li>
+  <li><a href="#data-transformation" id="toc-data-transformation" class="nav-link" data-scroll-target="#data-transformation"><span class="header-section-number">2.3</span> Data Transformation</a></li>
   </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">3</span> References</a></li>
   </ul>
 </nav>
-    </div>
-<!-- main -->
+</div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">DANL Project</h1>
-<p class="subtitle lead">Data-Driven Mastery: Unlocking Business Potential</p>
+<div class="quarto-title-block"><div><h1 class="title">DANL Project: Team 19</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">World IQ</p>
 </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Sianny Ortiz </p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            SUNY Geneseo
+          </p>
+      </div>
+      <div class="quarto-title-meta-contents">
+    <p class="author">Dominic Nicastro </p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            SUNY Geneseo
+          </p>
+      </div>
+      <div class="quarto-title-meta-contents">
+    <p class="author">Matthew Velez-Brand </p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            SUNY Geneseo
+          </p>
+      </div>
+    </div>
 
 <div class="quarto-title-meta">
 
+      
     <div>
-    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-             <p>Name 1 </p>
-             <p>Name 2 </p>
-             <p>Name 3 </p>
-             <p>Name 4 </p>
-             <p>Name 5 </p>
-          </div>
+      <p class="date">December 18, 2023</p>
+    </div>
   </div>
-    
   
     
   </div>
@@ -217,50 +152,44 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<section id="introduction" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
-<p>About this project <span class="emoji" data-emoji="clap">👏</span></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
-</section>
-<section id="data" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Data</h1>
-<p>The data.frame <code>mpg</code> contains a subset of the fuel economy data that the EPA makes available on <a href="https://fueleconomy.gov/">https://fueleconomy.gov/</a>. It contains only models which had a new release every year between 1999 and 2008 - this was used as a proxy for the popularity of the car. <span class="emoji" data-emoji="oncoming_automobile">🚘</span></p>
-<section id="summary-statistics" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="summary-statistics"><span class="header-section-number">2.1</span> Summary Statistics</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>mpg <span class="ot">&lt;-</span> ggplot2<span class="sc">::</span>mpg</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>IQ <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">'/Users/dominicnicastro/Downloads/avgIQpercountry.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell-output-display">
 
 <div data-pagedtable="false">
   <script data-pagedtable-source="" type="application/json">
-{"columns":[{"label":["manufacturer"],"name":[1],"type":["chr"],"align":["left"]},{"label":["model"],"name":[2],"type":["chr"],"align":["left"]},{"label":["displ"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["year"],"name":[4],"type":["int"],"align":["right"]},{"label":["cyl"],"name":[5],"type":["int"],"align":["right"]},{"label":["trans"],"name":[6],"type":["chr"],"align":["left"]},{"label":["drv"],"name":[7],"type":["chr"],"align":["left"]},{"label":["cty"],"name":[8],"type":["int"],"align":["right"]},{"label":["hwy"],"name":[9],"type":["int"],"align":["right"]},{"label":["fl"],"name":[10],"type":["chr"],"align":["left"]},{"label":["class"],"name":[11],"type":["chr"],"align":["left"]}],"data":[{"1":"audi","2":"a4","3":"1.8","4":"1999","5":"4","6":"auto(l5)","7":"f","8":"18","9":"29","10":"p","11":"compact"},{"1":"audi","2":"a4","3":"1.8","4":"1999","5":"4","6":"manual(m5)","7":"f","8":"21","9":"29","10":"p","11":"compact"},{"1":"audi","2":"a4","3":"2.0","4":"2008","5":"4","6":"manual(m6)","7":"f","8":"20","9":"31","10":"p","11":"compact"},{"1":"audi","2":"a4","3":"2.0","4":"2008","5":"4","6":"auto(av)","7":"f","8":"21","9":"30","10":"p","11":"compact"},{"1":"audi","2":"a4","3":"2.8","4":"1999","5":"6","6":"auto(l5)","7":"f","8":"16","9":"26","10":"p","11":"compact"},{"1":"audi","2":"a4","3":"2.8","4":"1999","5":"6","6":"manual(m5)","7":"f","8":"18","9":"26","10":"p","11":"compact"},{"1":"audi","2":"a4","3":"3.1","4":"2008","5":"6","6":"auto(av)","7":"f","8":"18","9":"27","10":"p","11":"compact"},{"1":"audi","2":"a4 quattro","3":"1.8","4":"1999","5":"4","6":"manual(m5)","7":"4","8":"18","9":"26","10":"p","11":"compact"},{"1":"audi","2":"a4 quattro","3":"1.8","4":"1999","5":"4","6":"auto(l5)","7":"4","8":"16","9":"25","10":"p","11":"compact"},{"1":"audi","2":"a4 quattro","3":"2.0","4":"2008","5":"4","6":"manual(m6)","7":"4","8":"20","9":"28","10":"p","11":"compact"},{"1":"audi","2":"a4 quattro","3":"2.0","4":"2008","5":"4","6":"auto(s6)","7":"4","8":"19","9":"27","10":"p","11":"compact"},{"1":"audi","2":"a4 quattro","3":"2.8","4":"1999","5":"6","6":"auto(l5)","7":"4","8":"15","9":"25","10":"p","11":"compact"},{"1":"audi","2":"a4 quattro","3":"2.8","4":"1999","5":"6","6":"manual(m5)","7":"4","8":"17","9":"25","10":"p","11":"compact"},{"1":"audi","2":"a4 quattro","3":"3.1","4":"2008","5":"6","6":"auto(s6)","7":"4","8":"17","9":"25","10":"p","11":"compact"},{"1":"audi","2":"a4 quattro","3":"3.1","4":"2008","5":"6","6":"manual(m6)","7":"4","8":"15","9":"25","10":"p","11":"compact"},{"1":"audi","2":"a6 quattro","3":"2.8","4":"1999","5":"6","6":"auto(l5)","7":"4","8":"15","9":"24","10":"p","11":"midsize"},{"1":"audi","2":"a6 quattro","3":"3.1","4":"2008","5":"6","6":"auto(s6)","7":"4","8":"17","9":"25","10":"p","11":"midsize"},{"1":"audi","2":"a6 quattro","3":"4.2","4":"2008","5":"8","6":"auto(s6)","7":"4","8":"16","9":"23","10":"p","11":"midsize"},{"1":"chevrolet","2":"c1500 suburban 2wd","3":"5.3","4":"2008","5":"8","6":"auto(l4)","7":"r","8":"14","9":"20","10":"r","11":"suv"},{"1":"chevrolet","2":"c1500 suburban 2wd","3":"5.3","4":"2008","5":"8","6":"auto(l4)","7":"r","8":"11","9":"15","10":"e","11":"suv"},{"1":"chevrolet","2":"c1500 suburban 2wd","3":"5.3","4":"2008","5":"8","6":"auto(l4)","7":"r","8":"14","9":"20","10":"r","11":"suv"},{"1":"chevrolet","2":"c1500 suburban 2wd","3":"5.7","4":"1999","5":"8","6":"auto(l4)","7":"r","8":"13","9":"17","10":"r","11":"suv"},{"1":"chevrolet","2":"c1500 suburban 2wd","3":"6.0","4":"2008","5":"8","6":"auto(l4)","7":"r","8":"12","9":"17","10":"r","11":"suv"},{"1":"chevrolet","2":"corvette","3":"5.7","4":"1999","5":"8","6":"manual(m6)","7":"r","8":"16","9":"26","10":"p","11":"2seater"},{"1":"chevrolet","2":"corvette","3":"5.7","4":"1999","5":"8","6":"auto(l4)","7":"r","8":"15","9":"23","10":"p","11":"2seater"},{"1":"chevrolet","2":"corvette","3":"6.2","4":"2008","5":"8","6":"manual(m6)","7":"r","8":"16","9":"26","10":"p","11":"2seater"},{"1":"chevrolet","2":"corvette","3":"6.2","4":"2008","5":"8","6":"auto(s6)","7":"r","8":"15","9":"25","10":"p","11":"2seater"},{"1":"chevrolet","2":"corvette","3":"7.0","4":"2008","5":"8","6":"manual(m6)","7":"r","8":"15","9":"24","10":"p","11":"2seater"},{"1":"chevrolet","2":"k1500 tahoe 4wd","3":"5.3","4":"2008","5":"8","6":"auto(l4)","7":"4","8":"14","9":"19","10":"r","11":"suv"},{"1":"chevrolet","2":"k1500 tahoe 4wd","3":"5.3","4":"2008","5":"8","6":"auto(l4)","7":"4","8":"11","9":"14","10":"e","11":"suv"},{"1":"chevrolet","2":"k1500 tahoe 4wd","3":"5.7","4":"1999","5":"8","6":"auto(l4)","7":"4","8":"11","9":"15","10":"r","11":"suv"},{"1":"chevrolet","2":"k1500 tahoe 4wd","3":"6.5","4":"1999","5":"8","6":"auto(l4)","7":"4","8":"14","9":"17","10":"d","11":"suv"},{"1":"chevrolet","2":"malibu","3":"2.4","4":"1999","5":"4","6":"auto(l4)","7":"f","8":"19","9":"27","10":"r","11":"midsize"},{"1":"chevrolet","2":"malibu","3":"2.4","4":"2008","5":"4","6":"auto(l4)","7":"f","8":"22","9":"30","10":"r","11":"midsize"},{"1":"chevrolet","2":"malibu","3":"3.1","4":"1999","5":"6","6":"auto(l4)","7":"f","8":"18","9":"26","10":"r","11":"midsize"},{"1":"chevrolet","2":"malibu","3":"3.5","4":"2008","5":"6","6":"auto(l4)","7":"f","8":"18","9":"29","10":"r","11":"midsize"},{"1":"chevrolet","2":"malibu","3":"3.6","4":"2008","5":"6","6":"auto(s6)","7":"f","8":"17","9":"26","10":"r","11":"midsize"},{"1":"dodge","2":"caravan 2wd","3":"2.4","4":"1999","5":"4","6":"auto(l3)","7":"f","8":"18","9":"24","10":"r","11":"minivan"},{"1":"dodge","2":"caravan 2wd","3":"3.0","4":"1999","5":"6","6":"auto(l4)","7":"f","8":"17","9":"24","10":"r","11":"minivan"},{"1":"dodge","2":"caravan 2wd","3":"3.3","4":"1999","5":"6","6":"auto(l4)","7":"f","8":"16","9":"22","10":"r","11":"minivan"},{"1":"dodge","2":"caravan 2wd","3":"3.3","4":"1999","5":"6","6":"auto(l4)","7":"f","8":"16","9":"22","10":"r","11":"minivan"},{"1":"dodge","2":"caravan 2wd","3":"3.3","4":"2008","5":"6","6":"auto(l4)","7":"f","8":"17","9":"24","10":"r","11":"minivan"},{"1":"dodge","2":"caravan 2wd","3":"3.3","4":"2008","5":"6","6":"auto(l4)","7":"f","8":"17","9":"24","10":"r","11":"minivan"},{"1":"dodge","2":"caravan 2wd","3":"3.3","4":"2008","5":"6","6":"auto(l4)","7":"f","8":"11","9":"17","10":"e","11":"minivan"},{"1":"dodge","2":"caravan 2wd","3":"3.8","4":"1999","5":"6","6":"auto(l4)","7":"f","8":"15","9":"22","10":"r","11":"minivan"},{"1":"dodge","2":"caravan 2wd","3":"3.8","4":"1999","5":"6","6":"auto(l4)","7":"f","8":"15","9":"21","10":"r","11":"minivan"},{"1":"dodge","2":"caravan 2wd","3":"3.8","4":"2008","5":"6","6":"auto(l6)","7":"f","8":"16","9":"23","10":"r","11":"minivan"},{"1":"dodge","2":"caravan 2wd","3":"4.0","4":"2008","5":"6","6":"auto(l6)","7":"f","8":"16","9":"23","10":"r","11":"minivan"},{"1":"dodge","2":"dakota pickup 4wd","3":"3.7","4":"2008","5":"6","6":"manual(m6)","7":"4","8":"15","9":"19","10":"r","11":"pickup"},{"1":"dodge","2":"dakota pickup 4wd","3":"3.7","4":"2008","5":"6","6":"auto(l4)","7":"4","8":"14","9":"18","10":"r","11":"pickup"},{"1":"dodge","2":"dakota pickup 4wd","3":"3.9","4":"1999","5":"6","6":"auto(l4)","7":"4","8":"13","9":"17","10":"r","11":"pickup"},{"1":"dodge","2":"dakota pickup 4wd","3":"3.9","4":"1999","5":"6","6":"manual(m5)","7":"4","8":"14","9":"17","10":"r","11":"pickup"},{"1":"dodge","2":"dakota pickup 4wd","3":"4.7","4":"2008","5":"8","6":"auto(l5)","7":"4","8":"14","9":"19","10":"r","11":"pickup"},{"1":"dodge","2":"dakota pickup 4wd","3":"4.7","4":"2008","5":"8","6":"auto(l5)","7":"4","8":"14","9":"19","10":"r","11":"pickup"},{"1":"dodge","2":"dakota pickup 4wd","3":"4.7","4":"2008","5":"8","6":"auto(l5)","7":"4","8":"9","9":"12","10":"e","11":"pickup"},{"1":"dodge","2":"dakota pickup 4wd","3":"5.2","4":"1999","5":"8","6":"manual(m5)","7":"4","8":"11","9":"17","10":"r","11":"pickup"},{"1":"dodge","2":"dakota pickup 4wd","3":"5.2","4":"1999","5":"8","6":"auto(l4)","7":"4","8":"11","9":"15","10":"r","11":"pickup"},{"1":"dodge","2":"durango 4wd","3":"3.9","4":"1999","5":"6","6":"auto(l4)","7":"4","8":"13","9":"17","10":"r","11":"suv"},{"1":"dodge","2":"durango 4wd","3":"4.7","4":"2008","5":"8","6":"auto(l5)","7":"4","8":"13","9":"17","10":"r","11":"suv"},{"1":"dodge","2":"durango 4wd","3":"4.7","4":"2008","5":"8","6":"auto(l5)","7":"4","8":"9","9":"12","10":"e","11":"suv"},{"1":"dodge","2":"durango 4wd","3":"4.7","4":"2008","5":"8","6":"auto(l5)","7":"4","8":"13","9":"17","10":"r","11":"suv"},{"1":"dodge","2":"durango 4wd","3":"5.2","4":"1999","5":"8","6":"auto(l4)","7":"4","8":"11","9":"16","10":"r","11":"suv"},{"1":"dodge","2":"durango 4wd","3":"5.7","4":"2008","5":"8","6":"auto(l5)","7":"4","8":"13","9":"18","10":"r","11":"suv"},{"1":"dodge","2":"durango 4wd","3":"5.9","4":"1999","5":"8","6":"auto(l4)","7":"4","8":"11","9":"15","10":"r","11":"suv"},{"1":"dodge","2":"ram 1500 pickup 4wd","3":"4.7","4":"2008","5":"8","6":"manual(m6)","7":"4","8":"12","9":"16","10":"r","11":"pickup"},{"1":"dodge","2":"ram 1500 pickup 4wd","3":"4.7","4":"2008","5":"8","6":"auto(l5)","7":"4","8":"9","9":"12","10":"e","11":"pickup"},{"1":"dodge","2":"ram 1500 pickup 4wd","3":"4.7","4":"2008","5":"8","6":"auto(l5)","7":"4","8":"13","9":"17","10":"r","11":"pickup"},{"1":"dodge","2":"ram 1500 pickup 4wd","3":"4.7","4":"2008","5":"8","6":"auto(l5)","7":"4","8":"13","9":"17","10":"r","11":"pickup"},{"1":"dodge","2":"ram 1500 pickup 4wd","3":"4.7","4":"2008","5":"8","6":"manual(m6)","7":"4","8":"12","9":"16","10":"r","11":"pickup"},{"1":"dodge","2":"ram 1500 pickup 4wd","3":"4.7","4":"2008","5":"8","6":"manual(m6)","7":"4","8":"9","9":"12","10":"e","11":"pickup"},{"1":"dodge","2":"ram 1500 pickup 4wd","3":"5.2","4":"1999","5":"8","6":"auto(l4)","7":"4","8":"11","9":"15","10":"r","11":"pickup"},{"1":"dodge","2":"ram 1500 pickup 4wd","3":"5.2","4":"1999","5":"8","6":"manual(m5)","7":"4","8":"11","9":"16","10":"r","11":"pickup"},{"1":"dodge","2":"ram 1500 pickup 4wd","3":"5.7","4":"2008","5":"8","6":"auto(l5)","7":"4","8":"13","9":"17","10":"r","11":"pickup"},{"1":"dodge","2":"ram 1500 pickup 4wd","3":"5.9","4":"1999","5":"8","6":"auto(l4)","7":"4","8":"11","9":"15","10":"r","11":"pickup"},{"1":"ford","2":"expedition 2wd","3":"4.6","4":"1999","5":"8","6":"auto(l4)","7":"r","8":"11","9":"17","10":"r","11":"suv"},{"1":"ford","2":"expedition 2wd","3":"5.4","4":"1999","5":"8","6":"auto(l4)","7":"r","8":"11","9":"17","10":"r","11":"suv"},{"1":"ford","2":"expedition 2wd","3":"5.4","4":"2008","5":"8","6":"auto(l6)","7":"r","8":"12","9":"18","10":"r","11":"suv"},{"1":"ford","2":"explorer 4wd","3":"4.0","4":"1999","5":"6","6":"auto(l5)","7":"4","8":"14","9":"17","10":"r","11":"suv"},{"1":"ford","2":"explorer 4wd","3":"4.0","4":"1999","5":"6","6":"manual(m5)","7":"4","8":"15","9":"19","10":"r","11":"suv"},{"1":"ford","2":"explorer 4wd","3":"4.0","4":"1999","5":"6","6":"auto(l5)","7":"4","8":"14","9":"17","10":"r","11":"suv"},{"1":"ford","2":"explorer 4wd","3":"4.0","4":"2008","5":"6","6":"auto(l5)","7":"4","8":"13","9":"19","10":"r","11":"suv"},{"1":"ford","2":"explorer 4wd","3":"4.6","4":"2008","5":"8","6":"auto(l6)","7":"4","8":"13","9":"19","10":"r","11":"suv"},{"1":"ford","2":"explorer 4wd","3":"5.0","4":"1999","5":"8","6":"auto(l4)","7":"4","8":"13","9":"17","10":"r","11":"suv"},{"1":"ford","2":"f150 pickup 4wd","3":"4.2","4":"1999","5":"6","6":"auto(l4)","7":"4","8":"14","9":"17","10":"r","11":"pickup"},{"1":"ford","2":"f150 pickup 4wd","3":"4.2","4":"1999","5":"6","6":"manual(m5)","7":"4","8":"14","9":"17","10":"r","11":"pickup"},{"1":"ford","2":"f150 pickup 4wd","3":"4.6","4":"1999","5":"8","6":"manual(m5)","7":"4","8":"13","9":"16","10":"r","11":"pickup"},{"1":"ford","2":"f150 pickup 4wd","3":"4.6","4":"1999","5":"8","6":"auto(l4)","7":"4","8":"13","9":"16","10":"r","11":"pickup"},{"1":"ford","2":"f150 pickup 4wd","3":"4.6","4":"2008","5":"8","6":"auto(l4)","7":"4","8":"13","9":"17","10":"r","11":"pickup"},{"1":"ford","2":"f150 pickup 4wd","3":"5.4","4":"1999","5":"8","6":"auto(l4)","7":"4","8":"11","9":"15","10":"r","11":"pickup"},{"1":"ford","2":"f150 pickup 4wd","3":"5.4","4":"2008","5":"8","6":"auto(l4)","7":"4","8":"13","9":"17","10":"r","11":"pickup"},{"1":"ford","2":"mustang","3":"3.8","4":"1999","5":"6","6":"manual(m5)","7":"r","8":"18","9":"26","10":"r","11":"subcompact"},{"1":"ford","2":"mustang","3":"3.8","4":"1999","5":"6","6":"auto(l4)","7":"r","8":"18","9":"25","10":"r","11":"subcompact"},{"1":"ford","2":"mustang","3":"4.0","4":"2008","5":"6","6":"manual(m5)","7":"r","8":"17","9":"26","10":"r","11":"subcompact"},{"1":"ford","2":"mustang","3":"4.0","4":"2008","5":"6","6":"auto(l5)","7":"r","8":"16","9":"24","10":"r","11":"subcompact"},{"1":"ford","2":"mustang","3":"4.6","4":"1999","5":"8","6":"auto(l4)","7":"r","8":"15","9":"21","10":"r","11":"subcompact"},{"1":"ford","2":"mustang","3":"4.6","4":"1999","5":"8","6":"manual(m5)","7":"r","8":"15","9":"22","10":"r","11":"subcompact"},{"1":"ford","2":"mustang","3":"4.6","4":"2008","5":"8","6":"manual(m5)","7":"r","8":"15","9":"23","10":"r","11":"subcompact"},{"1":"ford","2":"mustang","3":"4.6","4":"2008","5":"8","6":"auto(l5)","7":"r","8":"15","9":"22","10":"r","11":"subcompact"},{"1":"ford","2":"mustang","3":"5.4","4":"2008","5":"8","6":"manual(m6)","7":"r","8":"14","9":"20","10":"p","11":"subcompact"},{"1":"honda","2":"civic","3":"1.6","4":"1999","5":"4","6":"manual(m5)","7":"f","8":"28","9":"33","10":"r","11":"subcompact"},{"1":"honda","2":"civic","3":"1.6","4":"1999","5":"4","6":"auto(l4)","7":"f","8":"24","9":"32","10":"r","11":"subcompact"},{"1":"honda","2":"civic","3":"1.6","4":"1999","5":"4","6":"manual(m5)","7":"f","8":"25","9":"32","10":"r","11":"subcompact"},{"1":"honda","2":"civic","3":"1.6","4":"1999","5":"4","6":"manual(m5)","7":"f","8":"23","9":"29","10":"p","11":"subcompact"},{"1":"honda","2":"civic","3":"1.6","4":"1999","5":"4","6":"auto(l4)","7":"f","8":"24","9":"32","10":"r","11":"subcompact"},{"1":"honda","2":"civic","3":"1.8","4":"2008","5":"4","6":"manual(m5)","7":"f","8":"26","9":"34","10":"r","11":"subcompact"},{"1":"honda","2":"civic","3":"1.8","4":"2008","5":"4","6":"auto(l5)","7":"f","8":"25","9":"36","10":"r","11":"subcompact"},{"1":"honda","2":"civic","3":"1.8","4":"2008","5":"4","6":"auto(l5)","7":"f","8":"24","9":"36","10":"c","11":"subcompact"},{"1":"honda","2":"civic","3":"2.0","4":"2008","5":"4","6":"manual(m6)","7":"f","8":"21","9":"29","10":"p","11":"subcompact"},{"1":"hyundai","2":"sonata","3":"2.4","4":"1999","5":"4","6":"auto(l4)","7":"f","8":"18","9":"26","10":"r","11":"midsize"},{"1":"hyundai","2":"sonata","3":"2.4","4":"1999","5":"4","6":"manual(m5)","7":"f","8":"18","9":"27","10":"r","11":"midsize"},{"1":"hyundai","2":"sonata","3":"2.4","4":"2008","5":"4","6":"auto(l4)","7":"f","8":"21","9":"30","10":"r","11":"midsize"},{"1":"hyundai","2":"sonata","3":"2.4","4":"2008","5":"4","6":"manual(m5)","7":"f","8":"21","9":"31","10":"r","11":"midsize"},{"1":"hyundai","2":"sonata","3":"2.5","4":"1999","5":"6","6":"auto(l4)","7":"f","8":"18","9":"26","10":"r","11":"midsize"},{"1":"hyundai","2":"sonata","3":"2.5","4":"1999","5":"6","6":"manual(m5)","7":"f","8":"18","9":"26","10":"r","11":"midsize"},{"1":"hyundai","2":"sonata","3":"3.3","4":"2008","5":"6","6":"auto(l5)","7":"f","8":"19","9":"28","10":"r","11":"midsize"},{"1":"hyundai","2":"tiburon","3":"2.0","4":"1999","5":"4","6":"auto(l4)","7":"f","8":"19","9":"26","10":"r","11":"subcompact"},{"1":"hyundai","2":"tiburon","3":"2.0","4":"1999","5":"4","6":"manual(m5)","7":"f","8":"19","9":"29","10":"r","11":"subcompact"},{"1":"hyundai","2":"tiburon","3":"2.0","4":"2008","5":"4","6":"manual(m5)","7":"f","8":"20","9":"28","10":"r","11":"subcompact"},{"1":"hyundai","2":"tiburon","3":"2.0","4":"2008","5":"4","6":"auto(l4)","7":"f","8":"20","9":"27","10":"r","11":"subcompact"},{"1":"hyundai","2":"tiburon","3":"2.7","4":"2008","5":"6","6":"auto(l4)","7":"f","8":"17","9":"24","10":"r","11":"subcompact"},{"1":"hyundai","2":"tiburon","3":"2.7","4":"2008","5":"6","6":"manual(m6)","7":"f","8":"16","9":"24","10":"r","11":"subcompact"},{"1":"hyundai","2":"tiburon","3":"2.7","4":"2008","5":"6","6":"manual(m5)","7":"f","8":"17","9":"24","10":"r","11":"subcompact"},{"1":"jeep","2":"grand cherokee 4wd","3":"3.0","4":"2008","5":"6","6":"auto(l5)","7":"4","8":"17","9":"22","10":"d","11":"suv"},{"1":"jeep","2":"grand cherokee 4wd","3":"3.7","4":"2008","5":"6","6":"auto(l5)","7":"4","8":"15","9":"19","10":"r","11":"suv"},{"1":"jeep","2":"grand cherokee 4wd","3":"4.0","4":"1999","5":"6","6":"auto(l4)","7":"4","8":"15","9":"20","10":"r","11":"suv"},{"1":"jeep","2":"grand cherokee 4wd","3":"4.7","4":"1999","5":"8","6":"auto(l4)","7":"4","8":"14","9":"17","10":"r","11":"suv"},{"1":"jeep","2":"grand cherokee 4wd","3":"4.7","4":"2008","5":"8","6":"auto(l5)","7":"4","8":"9","9":"12","10":"e","11":"suv"},{"1":"jeep","2":"grand cherokee 4wd","3":"4.7","4":"2008","5":"8","6":"auto(l5)","7":"4","8":"14","9":"19","10":"r","11":"suv"},{"1":"jeep","2":"grand cherokee 4wd","3":"5.7","4":"2008","5":"8","6":"auto(l5)","7":"4","8":"13","9":"18","10":"r","11":"suv"},{"1":"jeep","2":"grand cherokee 4wd","3":"6.1","4":"2008","5":"8","6":"auto(l5)","7":"4","8":"11","9":"14","10":"p","11":"suv"},{"1":"land rover","2":"range rover","3":"4.0","4":"1999","5":"8","6":"auto(l4)","7":"4","8":"11","9":"15","10":"p","11":"suv"},{"1":"land rover","2":"range rover","3":"4.2","4":"2008","5":"8","6":"auto(s6)","7":"4","8":"12","9":"18","10":"r","11":"suv"},{"1":"land rover","2":"range rover","3":"4.4","4":"2008","5":"8","6":"auto(s6)","7":"4","8":"12","9":"18","10":"r","11":"suv"},{"1":"land rover","2":"range rover","3":"4.6","4":"1999","5":"8","6":"auto(l4)","7":"4","8":"11","9":"15","10":"p","11":"suv"},{"1":"lincoln","2":"navigator 2wd","3":"5.4","4":"1999","5":"8","6":"auto(l4)","7":"r","8":"11","9":"17","10":"r","11":"suv"},{"1":"lincoln","2":"navigator 2wd","3":"5.4","4":"1999","5":"8","6":"auto(l4)","7":"r","8":"11","9":"16","10":"p","11":"suv"},{"1":"lincoln","2":"navigator 2wd","3":"5.4","4":"2008","5":"8","6":"auto(l6)","7":"r","8":"12","9":"18","10":"r","11":"suv"},{"1":"mercury","2":"mountaineer 4wd","3":"4.0","4":"1999","5":"6","6":"auto(l5)","7":"4","8":"14","9":"17","10":"r","11":"suv"},{"1":"mercury","2":"mountaineer 4wd","3":"4.0","4":"2008","5":"6","6":"auto(l5)","7":"4","8":"13","9":"19","10":"r","11":"suv"},{"1":"mercury","2":"mountaineer 4wd","3":"4.6","4":"2008","5":"8","6":"auto(l6)","7":"4","8":"13","9":"19","10":"r","11":"suv"},{"1":"mercury","2":"mountaineer 4wd","3":"5.0","4":"1999","5":"8","6":"auto(l4)","7":"4","8":"13","9":"17","10":"r","11":"suv"},{"1":"nissan","2":"altima","3":"2.4","4":"1999","5":"4","6":"manual(m5)","7":"f","8":"21","9":"29","10":"r","11":"compact"},{"1":"nissan","2":"altima","3":"2.4","4":"1999","5":"4","6":"auto(l4)","7":"f","8":"19","9":"27","10":"r","11":"compact"},{"1":"nissan","2":"altima","3":"2.5","4":"2008","5":"4","6":"auto(av)","7":"f","8":"23","9":"31","10":"r","11":"midsize"},{"1":"nissan","2":"altima","3":"2.5","4":"2008","5":"4","6":"manual(m6)","7":"f","8":"23","9":"32","10":"r","11":"midsize"},{"1":"nissan","2":"altima","3":"3.5","4":"2008","5":"6","6":"manual(m6)","7":"f","8":"19","9":"27","10":"p","11":"midsize"},{"1":"nissan","2":"altima","3":"3.5","4":"2008","5":"6","6":"auto(av)","7":"f","8":"19","9":"26","10":"p","11":"midsize"},{"1":"nissan","2":"maxima","3":"3.0","4":"1999","5":"6","6":"auto(l4)","7":"f","8":"18","9":"26","10":"r","11":"midsize"},{"1":"nissan","2":"maxima","3":"3.0","4":"1999","5":"6","6":"manual(m5)","7":"f","8":"19","9":"25","10":"r","11":"midsize"},{"1":"nissan","2":"maxima","3":"3.5","4":"2008","5":"6","6":"auto(av)","7":"f","8":"19","9":"25","10":"p","11":"midsize"},{"1":"nissan","2":"pathfinder 4wd","3":"3.3","4":"1999","5":"6","6":"auto(l4)","7":"4","8":"14","9":"17","10":"r","11":"suv"},{"1":"nissan","2":"pathfinder 4wd","3":"3.3","4":"1999","5":"6","6":"manual(m5)","7":"4","8":"15","9":"17","10":"r","11":"suv"},{"1":"nissan","2":"pathfinder 4wd","3":"4.0","4":"2008","5":"6","6":"auto(l5)","7":"4","8":"14","9":"20","10":"p","11":"suv"},{"1":"nissan","2":"pathfinder 4wd","3":"5.6","4":"2008","5":"8","6":"auto(s5)","7":"4","8":"12","9":"18","10":"p","11":"suv"},{"1":"pontiac","2":"grand prix","3":"3.1","4":"1999","5":"6","6":"auto(l4)","7":"f","8":"18","9":"26","10":"r","11":"midsize"},{"1":"pontiac","2":"grand prix","3":"3.8","4":"1999","5":"6","6":"auto(l4)","7":"f","8":"16","9":"26","10":"p","11":"midsize"},{"1":"pontiac","2":"grand prix","3":"3.8","4":"1999","5":"6","6":"auto(l4)","7":"f","8":"17","9":"27","10":"r","11":"midsize"},{"1":"pontiac","2":"grand prix","3":"3.8","4":"2008","5":"6","6":"auto(l4)","7":"f","8":"18","9":"28","10":"r","11":"midsize"},{"1":"pontiac","2":"grand prix","3":"5.3","4":"2008","5":"8","6":"auto(s4)","7":"f","8":"16","9":"25","10":"p","11":"midsize"},{"1":"subaru","2":"forester awd","3":"2.5","4":"1999","5":"4","6":"manual(m5)","7":"4","8":"18","9":"25","10":"r","11":"suv"},{"1":"subaru","2":"forester awd","3":"2.5","4":"1999","5":"4","6":"auto(l4)","7":"4","8":"18","9":"24","10":"r","11":"suv"},{"1":"subaru","2":"forester awd","3":"2.5","4":"2008","5":"4","6":"manual(m5)","7":"4","8":"20","9":"27","10":"r","11":"suv"},{"1":"subaru","2":"forester awd","3":"2.5","4":"2008","5":"4","6":"manual(m5)","7":"4","8":"19","9":"25","10":"p","11":"suv"},{"1":"subaru","2":"forester awd","3":"2.5","4":"2008","5":"4","6":"auto(l4)","7":"4","8":"20","9":"26","10":"r","11":"suv"},{"1":"subaru","2":"forester awd","3":"2.5","4":"2008","5":"4","6":"auto(l4)","7":"4","8":"18","9":"23","10":"p","11":"suv"},{"1":"subaru","2":"impreza awd","3":"2.2","4":"1999","5":"4","6":"auto(l4)","7":"4","8":"21","9":"26","10":"r","11":"subcompact"},{"1":"subaru","2":"impreza awd","3":"2.2","4":"1999","5":"4","6":"manual(m5)","7":"4","8":"19","9":"26","10":"r","11":"subcompact"},{"1":"subaru","2":"impreza awd","3":"2.5","4":"1999","5":"4","6":"manual(m5)","7":"4","8":"19","9":"26","10":"r","11":"subcompact"},{"1":"subaru","2":"impreza awd","3":"2.5","4":"1999","5":"4","6":"auto(l4)","7":"4","8":"19","9":"26","10":"r","11":"subcompact"},{"1":"subaru","2":"impreza awd","3":"2.5","4":"2008","5":"4","6":"auto(s4)","7":"4","8":"20","9":"25","10":"p","11":"compact"},{"1":"subaru","2":"impreza awd","3":"2.5","4":"2008","5":"4","6":"auto(s4)","7":"4","8":"20","9":"27","10":"r","11":"compact"},{"1":"subaru","2":"impreza awd","3":"2.5","4":"2008","5":"4","6":"manual(m5)","7":"4","8":"19","9":"25","10":"p","11":"compact"},{"1":"subaru","2":"impreza awd","3":"2.5","4":"2008","5":"4","6":"manual(m5)","7":"4","8":"20","9":"27","10":"r","11":"compact"},{"1":"toyota","2":"4runner 4wd","3":"2.7","4":"1999","5":"4","6":"manual(m5)","7":"4","8":"15","9":"20","10":"r","11":"suv"},{"1":"toyota","2":"4runner 4wd","3":"2.7","4":"1999","5":"4","6":"auto(l4)","7":"4","8":"16","9":"20","10":"r","11":"suv"},{"1":"toyota","2":"4runner 4wd","3":"3.4","4":"1999","5":"6","6":"auto(l4)","7":"4","8":"15","9":"19","10":"r","11":"suv"},{"1":"toyota","2":"4runner 4wd","3":"3.4","4":"1999","5":"6","6":"manual(m5)","7":"4","8":"15","9":"17","10":"r","11":"suv"},{"1":"toyota","2":"4runner 4wd","3":"4.0","4":"2008","5":"6","6":"auto(l5)","7":"4","8":"16","9":"20","10":"r","11":"suv"},{"1":"toyota","2":"4runner 4wd","3":"4.7","4":"2008","5":"8","6":"auto(l5)","7":"4","8":"14","9":"17","10":"r","11":"suv"},{"1":"toyota","2":"camry","3":"2.2","4":"1999","5":"4","6":"manual(m5)","7":"f","8":"21","9":"29","10":"r","11":"midsize"},{"1":"toyota","2":"camry","3":"2.2","4":"1999","5":"4","6":"auto(l4)","7":"f","8":"21","9":"27","10":"r","11":"midsize"},{"1":"toyota","2":"camry","3":"2.4","4":"2008","5":"4","6":"manual(m5)","7":"f","8":"21","9":"31","10":"r","11":"midsize"},{"1":"toyota","2":"camry","3":"2.4","4":"2008","5":"4","6":"auto(l5)","7":"f","8":"21","9":"31","10":"r","11":"midsize"},{"1":"toyota","2":"camry","3":"3.0","4":"1999","5":"6","6":"auto(l4)","7":"f","8":"18","9":"26","10":"r","11":"midsize"},{"1":"toyota","2":"camry","3":"3.0","4":"1999","5":"6","6":"manual(m5)","7":"f","8":"18","9":"26","10":"r","11":"midsize"},{"1":"toyota","2":"camry","3":"3.5","4":"2008","5":"6","6":"auto(s6)","7":"f","8":"19","9":"28","10":"r","11":"midsize"},{"1":"toyota","2":"camry solara","3":"2.2","4":"1999","5":"4","6":"auto(l4)","7":"f","8":"21","9":"27","10":"r","11":"compact"},{"1":"toyota","2":"camry solara","3":"2.2","4":"1999","5":"4","6":"manual(m5)","7":"f","8":"21","9":"29","10":"r","11":"compact"},{"1":"toyota","2":"camry solara","3":"2.4","4":"2008","5":"4","6":"manual(m5)","7":"f","8":"21","9":"31","10":"r","11":"compact"},{"1":"toyota","2":"camry solara","3":"2.4","4":"2008","5":"4","6":"auto(s5)","7":"f","8":"22","9":"31","10":"r","11":"compact"},{"1":"toyota","2":"camry solara","3":"3.0","4":"1999","5":"6","6":"auto(l4)","7":"f","8":"18","9":"26","10":"r","11":"compact"},{"1":"toyota","2":"camry solara","3":"3.0","4":"1999","5":"6","6":"manual(m5)","7":"f","8":"18","9":"26","10":"r","11":"compact"},{"1":"toyota","2":"camry solara","3":"3.3","4":"2008","5":"6","6":"auto(s5)","7":"f","8":"18","9":"27","10":"r","11":"compact"},{"1":"toyota","2":"corolla","3":"1.8","4":"1999","5":"4","6":"auto(l3)","7":"f","8":"24","9":"30","10":"r","11":"compact"},{"1":"toyota","2":"corolla","3":"1.8","4":"1999","5":"4","6":"auto(l4)","7":"f","8":"24","9":"33","10":"r","11":"compact"},{"1":"toyota","2":"corolla","3":"1.8","4":"1999","5":"4","6":"manual(m5)","7":"f","8":"26","9":"35","10":"r","11":"compact"},{"1":"toyota","2":"corolla","3":"1.8","4":"2008","5":"4","6":"manual(m5)","7":"f","8":"28","9":"37","10":"r","11":"compact"},{"1":"toyota","2":"corolla","3":"1.8","4":"2008","5":"4","6":"auto(l4)","7":"f","8":"26","9":"35","10":"r","11":"compact"},{"1":"toyota","2":"land cruiser wagon 4wd","3":"4.7","4":"1999","5":"8","6":"auto(l4)","7":"4","8":"11","9":"15","10":"r","11":"suv"},{"1":"toyota","2":"land cruiser wagon 4wd","3":"5.7","4":"2008","5":"8","6":"auto(s6)","7":"4","8":"13","9":"18","10":"r","11":"suv"},{"1":"toyota","2":"toyota tacoma 4wd","3":"2.7","4":"1999","5":"4","6":"manual(m5)","7":"4","8":"15","9":"20","10":"r","11":"pickup"},{"1":"toyota","2":"toyota tacoma 4wd","3":"2.7","4":"1999","5":"4","6":"auto(l4)","7":"4","8":"16","9":"20","10":"r","11":"pickup"},{"1":"toyota","2":"toyota tacoma 4wd","3":"2.7","4":"2008","5":"4","6":"manual(m5)","7":"4","8":"17","9":"22","10":"r","11":"pickup"},{"1":"toyota","2":"toyota tacoma 4wd","3":"3.4","4":"1999","5":"6","6":"manual(m5)","7":"4","8":"15","9":"17","10":"r","11":"pickup"},{"1":"toyota","2":"toyota tacoma 4wd","3":"3.4","4":"1999","5":"6","6":"auto(l4)","7":"4","8":"15","9":"19","10":"r","11":"pickup"},{"1":"toyota","2":"toyota tacoma 4wd","3":"4.0","4":"2008","5":"6","6":"manual(m6)","7":"4","8":"15","9":"18","10":"r","11":"pickup"},{"1":"toyota","2":"toyota tacoma 4wd","3":"4.0","4":"2008","5":"6","6":"auto(l5)","7":"4","8":"16","9":"20","10":"r","11":"pickup"},{"1":"volkswagen","2":"gti","3":"2.0","4":"1999","5":"4","6":"manual(m5)","7":"f","8":"21","9":"29","10":"r","11":"compact"},{"1":"volkswagen","2":"gti","3":"2.0","4":"1999","5":"4","6":"auto(l4)","7":"f","8":"19","9":"26","10":"r","11":"compact"},{"1":"volkswagen","2":"gti","3":"2.0","4":"2008","5":"4","6":"manual(m6)","7":"f","8":"21","9":"29","10":"p","11":"compact"},{"1":"volkswagen","2":"gti","3":"2.0","4":"2008","5":"4","6":"auto(s6)","7":"f","8":"22","9":"29","10":"p","11":"compact"},{"1":"volkswagen","2":"gti","3":"2.8","4":"1999","5":"6","6":"manual(m5)","7":"f","8":"17","9":"24","10":"r","11":"compact"},{"1":"volkswagen","2":"jetta","3":"1.9","4":"1999","5":"4","6":"manual(m5)","7":"f","8":"33","9":"44","10":"d","11":"compact"},{"1":"volkswagen","2":"jetta","3":"2.0","4":"1999","5":"4","6":"manual(m5)","7":"f","8":"21","9":"29","10":"r","11":"compact"},{"1":"volkswagen","2":"jetta","3":"2.0","4":"1999","5":"4","6":"auto(l4)","7":"f","8":"19","9":"26","10":"r","11":"compact"},{"1":"volkswagen","2":"jetta","3":"2.0","4":"2008","5":"4","6":"auto(s6)","7":"f","8":"22","9":"29","10":"p","11":"compact"},{"1":"volkswagen","2":"jetta","3":"2.0","4":"2008","5":"4","6":"manual(m6)","7":"f","8":"21","9":"29","10":"p","11":"compact"},{"1":"volkswagen","2":"jetta","3":"2.5","4":"2008","5":"5","6":"auto(s6)","7":"f","8":"21","9":"29","10":"r","11":"compact"},{"1":"volkswagen","2":"jetta","3":"2.5","4":"2008","5":"5","6":"manual(m5)","7":"f","8":"21","9":"29","10":"r","11":"compact"},{"1":"volkswagen","2":"jetta","3":"2.8","4":"1999","5":"6","6":"auto(l4)","7":"f","8":"16","9":"23","10":"r","11":"compact"},{"1":"volkswagen","2":"jetta","3":"2.8","4":"1999","5":"6","6":"manual(m5)","7":"f","8":"17","9":"24","10":"r","11":"compact"},{"1":"volkswagen","2":"new beetle","3":"1.9","4":"1999","5":"4","6":"manual(m5)","7":"f","8":"35","9":"44","10":"d","11":"subcompact"},{"1":"volkswagen","2":"new beetle","3":"1.9","4":"1999","5":"4","6":"auto(l4)","7":"f","8":"29","9":"41","10":"d","11":"subcompact"},{"1":"volkswagen","2":"new beetle","3":"2.0","4":"1999","5":"4","6":"manual(m5)","7":"f","8":"21","9":"29","10":"r","11":"subcompact"},{"1":"volkswagen","2":"new beetle","3":"2.0","4":"1999","5":"4","6":"auto(l4)","7":"f","8":"19","9":"26","10":"r","11":"subcompact"},{"1":"volkswagen","2":"new beetle","3":"2.5","4":"2008","5":"5","6":"manual(m5)","7":"f","8":"20","9":"28","10":"r","11":"subcompact"},{"1":"volkswagen","2":"new beetle","3":"2.5","4":"2008","5":"5","6":"auto(s6)","7":"f","8":"20","9":"29","10":"r","11":"subcompact"},{"1":"volkswagen","2":"passat","3":"1.8","4":"1999","5":"4","6":"manual(m5)","7":"f","8":"21","9":"29","10":"p","11":"midsize"},{"1":"volkswagen","2":"passat","3":"1.8","4":"1999","5":"4","6":"auto(l5)","7":"f","8":"18","9":"29","10":"p","11":"midsize"},{"1":"volkswagen","2":"passat","3":"2.0","4":"2008","5":"4","6":"auto(s6)","7":"f","8":"19","9":"28","10":"p","11":"midsize"},{"1":"volkswagen","2":"passat","3":"2.0","4":"2008","5":"4","6":"manual(m6)","7":"f","8":"21","9":"29","10":"p","11":"midsize"},{"1":"volkswagen","2":"passat","3":"2.8","4":"1999","5":"6","6":"auto(l5)","7":"f","8":"16","9":"26","10":"p","11":"midsize"},{"1":"volkswagen","2":"passat","3":"2.8","4":"1999","5":"6","6":"manual(m5)","7":"f","8":"18","9":"26","10":"p","11":"midsize"},{"1":"volkswagen","2":"passat","3":"3.6","4":"2008","5":"6","6":"auto(s6)","7":"f","8":"17","9":"26","10":"p","11":"midsize"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["Rank"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Country"],"name":[2],"type":["chr"],"align":["left"]},{"label":["Average IQ"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["Continent"],"name":[4],"type":["chr"],"align":["left"]},{"label":["Literacy Rate"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["Nobel Prices"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["HDI (2021)"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["Mean years of schooling - 2021"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["GNI - 2021"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["Population - 2023"],"name":[10],"type":["chr"],"align":["left"]}],"data":[{"1":"1","2":"Japan","3":"106.48","4":"Asia","5":"0.99","6":"29","7":"0.925","8":"13.4","9":"42274","10":"123294513"},{"1":"2","2":"Taiwan","3":"106.47","4":"Asia","5":"0.96","6":"4","7":"NA","8":"NA","9":"NA","10":"10143543"},{"1":"3","2":"Singapore","3":"105.89","4":"Asia","5":"0.97","6":"0","7":"0.939","8":"11.9","9":"90919","10":"6014723"},{"1":"4","2":"Hong Kong","3":"105.37","4":"Asia","5":"0.94","6":"1","7":"0.952","8":"12.2","9":"62607","10":"7491609"},{"1":"5","2":"China","3":"104.10","4":"Asia","5":"0.96","6":"8","7":"0.768","8":"7.6","9":"17504","10":"1425671352"},{"1":"6","2":"South Korea","3":"102.35","4":"Asia","5":"0.98","6":"0","7":"0.925","8":"12.5","9":"44501","10":"51784059"},{"1":"7","2":"Belarus","3":"101.60","4":"Europe","5":"1.00","6":"2","7":"0.808","8":"12.1","9":"18849","10":"9498238"},{"1":"8","2":"Finland","3":"101.20","4":"Europe","5":"1.00","6":"5","7":"0.940","8":"12.9","9":"49452","10":"5545475"},{"1":"9","2":"Liechtenstein","3":"101.07","4":"Europe","5":"1.00","6":"0","7":"0.935","8":"12.5","9":"146830","10":"39315"},{"1":"10","2":"Germany","3":"100.74","4":"Europe","5":"0.99","6":"111","7":"0.942","8":"14.1","9":"54534","10":"83294633"},{"1":"11","2":"Netherlands","3":"100.74","4":"Europe","5":"0.99","6":"22","7":"0.941","8":"12.6","9":"55979","10":"17618299"},{"1":"12","2":"Estonia","3":"100.72","4":"Europe","5":"1.00","6":"0","7":"0.890","8":"13.5","9":"38048","10":"1322766"},{"1":"13","2":"Luxembourg","3":"99.87","4":"Europe","5":"1.00","6":"2","7":"0.930","8":"13.0","9":"84649","10":"654.768"},{"1":"14","2":"Macao","3":"99.82","4":"Asia","5":"0.97","6":"0","7":"NA","8":"NA","9":"NA","10":"704.15"},{"1":"15","2":"Cambodia","3":"99.75","4":"Asia","5":"0.78","6":"0","7":"0.593","8":"5.1","9":"4079","10":"16944826"},{"1":"16","2":"Canada","3":"99.52","4":"North America","5":"0.99","6":"28","7":"0.936","8":"13.8","9":"46808","10":"38781292"},{"1":"17","2":"Australia","3":"99.24","4":"Oceania","5":"0.99","6":"12","7":"0.951","8":"12.7","9":"49238","10":"26439112"},{"1":"18","2":"Hungary","3":"99.24","4":"Europe","5":"0.99","6":"13","7":"0.846","8":"12.2","9":"32789","10":"10156239"},{"1":"19","2":"Switzerland","3":"99.24","4":"Europe","5":"0.99","6":"27","7":"0.962","8":"13.9","9":"66933","10":"8796669"},{"1":"20","2":"United Kingdom","3":"99.12","4":"Europe","5":"0.99","6":"137","7":"0.929","8":"13.4","9":"45225","10":"67736802"},{"1":"21","2":"North Korea","3":"98.82","4":"Asia","5":"1.00","6":"0","7":"NA","8":"NA","9":"NA","10":"26160822"},{"1":"22","2":"Slovenia","3":"98.60","4":"Europe","5":"1.00","6":"1","7":"0.918","8":"12.8","9":"39746","10":"2119675"},{"1":"23","2":"New Zealand","3":"98.57","4":"Oceania","5":"0.99","6":"3","7":"0.937","8":"12.9","9":"44057","10":"5228100"},{"1":"24","2":"Austria","3":"98.38","4":"Europe","5":"0.98","6":"22","7":"0.916","8":"12.3","9":"53619","10":"8958961"},{"1":"25","2":"Iceland","3":"98.26","4":"Europe","5":"0.99","6":"1","7":"0.959","8":"13.8","9":"55782","10":"375.319"},{"1":"26","2":"Denmark","3":"97.83","4":"Europe","5":"0.99","6":"13","7":"0.948","8":"13.0","9":"60365","10":"5910913"},{"1":"27","2":"Belgium","3":"97.49","4":"Europe","5":"0.99","6":"11","7":"0.937","8":"12.4","9":"52293","10":"11686140"},{"1":"28","2":"United States","3":"97.43","4":"North America","5":"0.99","6":"400","7":"0.921","8":"13.7","9":"64765","10":"339996564"},{"1":"29","2":"Norway","3":"97.13","4":"Europe","5":"1.00","6":"13","7":"0.961","8":"13.0","9":"64660","10":"5474360"},{"1":"30","2":"Sweden","3":"97.00","4":"Europe","5":"0.99","6":"32","7":"0.947","8":"12.6","9":"54489","10":"10612086"},{"1":"31","2":"France","3":"96.69","4":"Europe","5":"0.99","6":"71","7":"0.903","8":"11.6","9":"45937","10":"64756584"},{"1":"32","2":"Poland","3":"96.35","4":"Europe","5":"1.00","6":"19","7":"0.876","8":"13.2","9":"33034","10":"41026068"},{"1":"33","2":"Slovakia","3":"96.32","4":"Europe","5":"1.00","6":"0","7":"0.848","8":"12.9","9":"30690","10":"5795199"},{"1":"34","2":"Russia","3":"96.29","4":"Europe/Asia","5":"1.00","6":"0","7":"0.822","8":"12.8","9":"27166","10":"144444359"},{"1":"35","2":"Lithuania","3":"95.89","4":"Europe","5":"1.00","6":"3","7":"0.875","8":"13.5","9":"37931","10":"2718352"},{"1":"36","2":"Croatia","3":"95.75","4":"Europe","5":"0.99","6":"2","7":"0.858","8":"12.2","9":"30132","10":"4008617"},{"1":"37","2":"Andorra","3":"95.20","4":"Europe","5":"1.00","6":"0","7":"0.858","8":"10.6","9":"51167","10":"76.965"},{"1":"38","2":"Ireland","3":"95.13","4":"Europe","5":"0.99","6":"11","7":"0.945","8":"11.6","9":"76169","10":"5056935"},{"1":"39","2":"Czech republic","3":"94.92","4":"Europe","5":"0.99","6":"6","7":"0.889","8":"12.9","9":"38745","10":"10495295"},{"1":"40","2":"Latvia","3":"94.79","4":"Europe","5":"1.00","6":"1","7":"0.863","8":"13.3","9":"32803","10":"1830212"},{"1":"41","2":"Italy","3":"94.23","4":"Europe","5":"0.99","6":"21","7":"0.895","8":"10.7","9":"42840","10":"58870763"},{"1":"42","2":"New Caledonia","3":"93.92","4":"Oceania","5":"0.97","6":"0","7":"NA","8":"NA","9":"NA","10":"292.991"},{"1":"43","2":"Vanuatu","3":"93.92","4":"Oceania","5":"0.85","6":"0","7":"0.607","8":"7.1","9":"3085","10":"334.506"},{"1":"44","2":"Spain","3":"93.90","4":"Europe","5":"0.98","6":"8","7":"0.905","8":"10.6","9":"38354","10":"47519628"},{"1":"45","2":"Bermuda","3":"93.48","4":"North America","5":"0.98","6":"0","7":"NA","8":"NA","9":"NA","10":"63.837"},{"1":"46","2":"Cyprus","3":"93.39","4":"Europe","5":"0.99","6":"1","7":"0.896","8":"12.4","9":"38188","10":"1260138"},{"1":"47","2":"Portugal","3":"92.77","4":"Europe","5":"0.95","6":"2","7":"0.866","8":"9.6","9":"33155","10":"10247605"},{"1":"48","2":"Israel","3":"92.43","4":"Asia","5":"0.97","6":"13","7":"0.919","8":"13.3","9":"41524","10":"9174520"},{"1":"49","2":"Barbados","3":"91.60","4":"Central America","5":"1.00","6":"0","7":"0.790","8":"9.9","9":"12306","10":"281.996"},{"1":"50","2":"Malta","3":"91.27","4":"Europe","5":"0.94","6":"0","7":"0.918","8":"12.2","9":"38884","10":"535.065"},{"1":"51","2":"Myanmar","3":"91.18","4":"Asia","5":"0.93","6":"1","7":"0.585","8":"6.4","9":"3851","10":"54577997"},{"1":"52","2":"Mongolia","3":"91.03","4":"Asia","5":"0.98","6":"0","7":"0.739","8":"9.4","9":"10588","10":"3447157"},{"1":"53","2":"Bulgaria","3":"90.99","4":"Europe","5":"0.98","6":"1","7":"0.795","8":"11.4","9":"23079","10":"6687717"},{"1":"54","2":"Greece","3":"90.77","4":"Europe","5":"0.95","6":"2","7":"0.887","8":"11.4","9":"29002","10":"10341277"},{"1":"55","2":"Suriname","3":"90.29","4":"South America","5":"0.96","6":"0","7":"0.730","8":"9.8","9":"12672","10":"623.237"},{"1":"56","2":"Ukraine","3":"90.07","4":"Europe","5":"1.00","6":"6","7":"0.773","8":"11.1","9":"13256","10":"36744634"},{"1":"57","2":"Moldavia","3":"89.98","4":"Europe","5":"0.99","6":"0","7":"0.767","8":"11.8","9":"14875","10":"3435931"},{"1":"58","2":"Serbia","3":"89.60","4":"Europe","5":"0.98","6":"0","7":"0.802","8":"11.4","9":"19123","10":"7149077"},{"1":"59","2":"Vietnam","3":"89.53","4":"Asia","5":"0.95","6":"1","7":"0.703","8":"8.4","9":"7867","10":"98858950"},{"1":"60","2":"Iraq","3":"89.28","4":"Asia","5":"0.80","6":"1","7":"0.686","8":"7.9","9":"9977","10":"45504560"},{"1":"61","2":"Uzbekistan","3":"89.01","4":"Asia","5":"1.00","6":"0","7":"0.727","8":"11.9","9":"7917","10":"35163944"},{"1":"62","2":"Kazakhstan","3":"88.89","4":"Asia","5":"1.00","6":"0","7":"0.811","8":"12.3","9":"23943","10":"19606634"},{"1":"63","2":"Thailand","3":"88.87","4":"Asia","5":"0.94","6":"0","7":"0.800","8":"8.7","9":"17030","10":"71801279"},{"1":"64","2":"Armenia","3":"88.82","4":"Asia","5":"1.00","6":"0","7":"0.759","8":"11.3","9":"13158","10":"2777971"},{"1":"65","2":"Bosnia and Herzegovina","3":"88.54","4":"Europe","5":"0.98","6":"2","7":"0.780","8":"10.5","9":"15242","10":"3210848"},{"1":"66","2":"Costa Rica","3":"88.34","4":"Central America","5":"0.98","6":"1","7":"0.809","8":"8.8","9":"19974","10":"5212173"},{"1":"67","2":"Bhutan","3":"87.94","4":"Asia","5":"0.64","6":"0","7":"0.666","8":"5.2","9":"9438","10":"787.425"},{"1":"68","2":"Chile","3":"87.89","4":"South America","5":"0.97","6":"2","7":"0.855","8":"10.9","9":"24563","10":"19629590"},{"1":"69","2":"Mexico","3":"87.73","4":"North America","5":"0.95","6":"3","7":"0.758","8":"9.2","9":"17896","10":"128455567"},{"1":"70","2":"Tajikistan","3":"87.71","4":"Asia","5":"1.00","6":"0","7":"0.685","8":"11.3","9":"4548","10":"10143543"},{"1":"71","2":"Uruguay","3":"87.59","4":"South America","5":"0.98","6":"0","7":"0.809","8":"9.0","9":"21269","10":"3423109"},{"1":"72","2":"Brunei","3":"87.58","4":"Asia","5":"0.97","6":"0","7":"0.829","8":"9.2","9":"64490","10":"452.524"},{"1":"73","2":"Malaysia","3":"87.58","4":"Asia","5":"0.95","6":"0","7":"0.803","8":"10.6","9":"26658","10":"34308525"},{"1":"74","2":"Bahamas","3":"86.99","4":"Central America","5":"0.96","6":"0","7":"0.812","8":"12.6","9":"30486","10":"412.624"},{"1":"75","2":"Romania","3":"86.88","4":"Europe","5":"0.99","6":"5","7":"0.821","8":"11.3","9":"30027","10":"19892812"},{"1":"76","2":"Türkiye","3":"86.80","4":"Europe/Asia","5":"0.96","6":"2","7":"0.838","8":"8.6","9":"31033","10":"85816199"},{"1":"77","2":"Argentina","3":"86.63","4":"South America","5":"0.98","6":"5","7":"0.842","8":"11.1","9":"20925","10":"45773884"},{"1":"78","2":"Sri Lanka","3":"86.62","4":"Asia","5":"0.93","6":"0","7":"0.782","8":"10.8","9":"12578","10":"21893579"},{"1":"79","2":"Mauritius","3":"86.56","4":"Africa","5":"0.91","6":"0","7":"0.802","8":"10.4","9":"22025","10":"1300557"},{"1":"80","2":"Turkmenistan","3":"85.86","4":"Asia","5":"1.00","6":"0","7":"0.745","8":"11.3","9":"13021","10":"6516100"},{"1":"81","2":"Montenegro","3":"85.78","4":"Europe","5":"0.99","6":"0","7":"0.832","8":"12.2","9":"20839","10":"626.485"},{"1":"82","2":"Trinidad and Tobago","3":"85.63","4":"Central America","5":"0.99","6":"1","7":"0.810","8":"11.6","9":"23392","10":"1534937"},{"1":"83","2":"Azerbaijan","3":"84.81","4":"Asia","5":"1.00","6":"1","7":"0.745","8":"10.5","9":"14257","10":"10412652"},{"1":"84","2":"Georgia","3":"84.50","4":"Europe/Asia","5":"1.00","6":"0","7":"0.802","8":"12.8","9":"14664","10":"3728282"},{"1":"85","2":"Turks and Caicos Islands","3":"84.29","4":"Central America","5":"0.98","6":"0","7":"NA","8":"NA","9":"NA","10":"44.104"},{"1":"86","2":"Paraguay","3":"84.04","4":"South America","5":"0.96","6":"0","7":"0.717","8":"8.9","9":"12349","10":"6861524"},{"1":"87","2":"Federated States of Micronesia","3":"83.96","4":"Oceania","5":"0.89","6":"0","7":"0.628","8":"7.8","9":"3696","10":"115.224"},{"1":"88","2":"Fiji","3":"83.96","4":"Oceania","5":"0.94","6":"0","7":"0.730","8":"10.9","9":"9980","10":"936.375"},{"1":"89","2":"Marshall Islands","3":"83.96","4":"Oceania","5":"0.98","6":"0","7":"0.639","8":"10.9","9":"4620","10":"41.996"},{"1":"90","2":"Solomon Islands","3":"83.96","4":"Oceania","5":"0.84","6":"0","7":"0.564","8":"5.7","9":"2482","10":"740.425"},{"1":"91","2":"Cuba","3":"83.90","4":"Central America","5":"1.00","6":"0","7":"0.764","8":"12.5","9":"7879","10":"11194449"},{"1":"92","2":"Bahrain","3":"83.60","4":"Asia","5":"0.96","6":"0","7":"0.875","8":"11.0","9":"39497","10":"1485510"},{"1":"93","2":"Brazil","3":"83.38","4":"South America","5":"0.93","6":"0","7":"0.754","8":"8.1","9":"14370","10":"216422446"},{"1":"94","2":"Guyana","3":"83.23","4":"South America","5":"0.88","6":"0","7":"0.714","8":"8.6","9":"22465","10":"813.834"},{"1":"95","2":"Colombia","3":"83.13","4":"South America","5":"0.95","6":"2","7":"0.752","8":"8.9","9":"14384","10":"52085168"},{"1":"96","2":"Venezuela","3":"82.99","4":"South America","5":"0.95","6":"1","7":"0.691","8":"11.1","9":"4811","10":"28838499"},{"1":"97","2":"Cayman Islands","3":"82.24","4":"Central America","5":"0.99","6":"0","7":"NA","8":"NA","9":"NA","10":"69310"},{"1":"98","2":"Afghanistan","3":"82.12","4":"Asia","5":"0.38","6":"0","7":"0.478","8":"3.0","9":"1824","10":"42239854"},{"1":"99","2":"Haiti","3":"82.10","4":"Central America","5":"0.61","6":"0","7":"0.535","8":"5.6","9":"2848","10":"11724764"},{"1":"100","2":"Dominican Republic","3":"82.05","4":"Central America","5":"0.92","6":"0","7":"0.767","8":"9.3","9":"17990","10":"11332973"},{"1":"101","2":"United Arab Emirates","3":"82.05","4":"Asia","5":"0.93","6":"0","7":"0.911","8":"12.7","9":"62574","10":"9516871"},{"1":"102","2":"Puerto Rico","3":"81.99","4":"Central America","5":"0.93","6":"0","7":"NA","8":"NA","9":"NA","10":"3260314"},{"1":"103","2":"North Macedonia","3":"81.91","4":"Europe","5":"0.98","6":"0","7":"0.770","8":"10.2","9":"15918","10":"2085679"},{"1":"104","2":"Albania","3":"81.75","4":"Europe","5":"0.98","6":"0","7":"0.796","8":"11.3","9":"14131","10":"2832439"},{"1":"105","2":"Lebanon","3":"81.70","4":"Asia","5":"0.94","6":"0","7":"0.706","8":"8.7","9":"9526","10":"5353930"},{"1":"106","2":"Philippines","3":"81.64","4":"Asia","5":"0.97","6":"1","7":"0.699","8":"9.0","9":"8920","10":"117337368"},{"1":"107","2":"Peru","3":"81.44","4":"South America","5":"0.94","6":"1","7":"0.762","8":"9.9","9":"12246","10":"34352719"},{"1":"108","2":"Northern Mariana Islands","3":"81.36","4":"Oceania","5":"0.97","6":"0","7":"NA","8":"NA","9":"NA","10":"49.796"},{"1":"109","2":"Laos","3":"80.99","4":"Asia","5":"0.80","6":"0","7":"0.607","8":"5.4","9":"7700","10":"7633779"},{"1":"110","2":"Libya","3":"80.92","4":"Africa","5":"0.91","6":"0","7":"0.718","8":"7.6","9":"15336","10":"6888388"},{"1":"111","2":"Qatar","3":"80.78","4":"Asia","5":"0.98","6":"0","7":"0.855","8":"10.0","9":"87134","10":"2716391"},{"1":"112","2":"Jordan","3":"80.70","4":"Asia","5":"0.98","6":"0","7":"0.720","8":"10.4","9":"9924","10":"11337053"},{"1":"113","2":"Maldives","3":"80.54","4":"Asia","5":"0.99","6":"0","7":"0.747","8":"7.3","9":"15448","10":"521.022"},{"1":"114","2":"Iran","3":"80.01","4":"Asia","5":"0.87","6":"1","7":"0.774","8":"10.6","9":"13001","10":"89172767"},{"1":"115","2":"Pakistan","3":"80.00","4":"Asia","5":"0.56","6":"2","7":"0.544","8":"4.5","9":"4624","10":"240485658"},{"1":"116","2":"Grenade","3":"79.34","4":"Central America","5":"0.96","6":"0","7":"0.795","8":"9.0","9":"13484","10":"126.184"},{"1":"117","2":"Tunisia","3":"79.22","4":"Africa","5":"0.81","6":"1","7":"0.731","8":"7.4","9":"10258","10":"12458223"},{"1":"118","2":"Kyrgyzstan","3":"79.09","4":"Asia","5":"0.99","6":"0","7":"0.692","8":"11.4","9":"4566","10":"6735348"},{"1":"119","2":"Panama","3":"79.00","4":"Central America","5":"0.95","6":"0","7":"0.805","8":"10.5","9":"26957","10":"4468087"},{"1":"120","2":"Chad","3":"78.87","4":"Africa","5":"0.40","6":"0","7":"0.394","8":"2.6","9":"1364","10":"18278568"},{"1":"121","2":"Sudan","3":"78.87","4":"Africa","5":"0.59","6":"0","7":"0.508","8":"3.8","9":"3575","10":"48109006"},{"1":"122","2":"Seychelles","3":"78.76","4":"Africa","5":"0.95","6":"0","7":"0.785","8":"10.3","9":"25831","10":"107.66"},{"1":"123","2":"Oman","3":"78.70","4":"Asia","5":"0.94","6":"0","7":"0.816","8":"11.7","9":"27054","10":"4644384"},{"1":"124","2":"Kuwait","3":"78.64","4":"Asia","5":"0.96","6":"0","7":"0.831","8":"7.3","9":"52920","10":"4310108"},{"1":"125","2":"East Timor","3":"78.49","4":"Asia","5":"0.64","6":"0","7":"NA","8":"NA","9":"NA","10":"1360596"},{"1":"126","2":"Indonesia","3":"78.49","4":"Asia","5":"0.95","6":"0","7":"0.705","8":"8.6","9":"11466","10":"277534123"},{"1":"127","2":"Papua New Guinea","3":"78.49","4":"Oceania","5":"0.63","6":"0","7":"0.558","8":"4.7","9":"4009","10":"10329931"},{"1":"128","2":"Ecuador","3":"78.26","4":"South America","5":"0.95","6":"0","7":"0.740","8":"8.8","9":"10312","10":"18190484"},{"1":"129","2":"Palestine","3":"77.69","4":"Asia","5":"0.97","6":"1","7":"0.715","8":"9.9","9":"6583","10":"5040000"},{"1":"130","2":"Senegal","3":"77.37","4":"Africa","5":"0.56","6":"0","7":"0.511","8":"2.9","9":"3344","10":"17763163"},{"1":"131","2":"Comoros","3":"77.07","4":"Africa","5":"0.78","6":"0","7":"0.558","8":"5.1","9":"3142","10":"852.075"},{"1":"132","2":"Madagascar","3":"76.79","4":"Africa","5":"0.65","6":"0","7":"0.501","8":"5.1","9":"1484","10":"30325732"},{"1":"133","2":"British Virgin Islands","3":"76.69","4":"Central America","5":"0.98","6":"0","7":"NA","8":"NA","9":"NA","10":" 32291"},{"1":"134","2":"Bolivia","3":"76.53","4":"South America","5":"0.95","6":"0","7":"0.692","8":"9.8","9":"8111","10":"12388571"},{"1":"135","2":"Uganda","3":"76.42","4":"Africa","5":"0.74","6":"0","7":"0.525","8":"5.7","9":"2181","10":"48582334"},{"1":"136","2":"Saudi Arabia","3":"76.36","4":"Asia","5":"0.95","6":"0","7":"0.875","8":"11.3","9":"46112","10":"36947025"},{"1":"137","2":"Egypt","3":"76.32","4":"Africa","5":"0.76","6":"4","7":"0.731","8":"9.6","9":"11732","10":"112716599"},{"1":"138","2":"India","3":"76.24","4":"Asia","5":"0.72","6":"12","7":"0.633","8":"6.7","9":"6590","10":"1428627663"},{"1":"139","2":"Algeria","3":"76.00","4":"Africa","5":"0.80","6":"2","7":"0.745","8":"8.1","9":"10800","10":"45606481"},{"1":"140","2":"Kenya","3":"75.20","4":"Africa","5":"0.78","6":"1","7":"0.575","8":"6.7","9":"4474","10":"55100587"},{"1":"141","2":"Angola","3":"75.10","4":"Africa","5":"0.71","6":"0","7":"0.586","8":"5.4","9":"5466","10":"36684203"},{"1":"142","2":"Jamaica","3":"75.08","4":"Central America","5":"0.89","6":"0","7":"0.709","8":"9.2","9":"8834","10":"2825544"},{"1":"143","2":"Tanzania","3":"74.95","4":"Africa","5":"0.80","6":"1","7":"0.549","8":"6.4","9":"2664","10":"67438106"},{"1":"144","2":"Syria","3":"74.41","4":"Asia","5":"0.86","6":"0","7":"0.577","8":"5.1","9":"4192","10":"23227014"},{"1":"145","2":"Bangladesh","3":"74.33","4":"Asia","5":"0.61","6":"2","7":"0.661","8":"7.4","9":"5472","10":"172954319"},{"1":"146","2":"Zimbabwe","3":"74.01","4":"Africa","5":"0.87","6":"0","7":"0.593","8":"8.7","9":"3810","10":"16665409"},{"1":"147","2":"Burkina Faso","3":"73.80","4":"Africa","5":"0.38","6":"0","7":"0.449","8":"2.1","9":"2118","10":"23251485"},{"1":"148","2":"Saint Lucia","3":"73.68","4":"Central America","5":"0.90","6":"2","7":"0.715","8":"8.5","9":"12048","10":"180.251"},{"1":"149","2":"Mozambique","3":"72.50","4":"Africa","5":"0.59","6":"0","7":"0.446","8":"3.2","9":"1198","10":"33897354"},{"1":"150","2":"Burundi","3":"72.09","4":"Africa","5":"0.85","6":"0","7":"0.426","8":"3.1","9":"732","10":"13238559"},{"1":"151","2":"Niger","3":"70.82","4":"Africa","5":"0.19","6":"0","7":"0.400","8":"2.1","9":"1240","10":"27202843"},{"1":"152","2":"Antigua and Barbuda","3":"70.48","4":"Central America","5":"0.99","6":"0","7":"0.788","8":"9.3","9":"16792","10":"94.298"},{"1":"153","2":"Rwanda","3":"69.95","4":"Africa","5":"0.71","6":"0","7":"0.534","8":"4.4","9":"2210","10":"14094683"},{"1":"154","2":"Benin","3":"69.71","4":"Africa","5":"0.38","6":"0","7":"0.525","8":"4.3","9":"3409","10":"13712828"},{"1":"155","2":"Malawi","3":"69.70","4":"Africa","5":"0.66","6":"0","7":"0.512","8":"4.5","9":"1466","10":"20931751"},{"1":"156","2":"El Salvador","3":"69.63","4":"Central America","5":"0.88","6":"0","7":"0.675","8":"7.2","9":"8296","10":"6364943"},{"1":"157","2":"Botswana","3":"69.45","4":"Africa","5":"0.88","6":"0","7":"0.693","8":"10.3","9":"16198","10":"2675353"},{"1":"158","2":"Lesotho","3":"68.87","4":"Africa","5":"0.79","6":"0","7":"0.514","8":"6.0","9":"2700","10":"2330318"},{"1":"159","2":"South Africa","3":"68.87","4":"Africa","5":"0.95","6":"11","7":"0.713","8":"11.4","9":"12948","10":"60414495"},{"1":"160","2":"Eswatini","3":"68.87","4":"Africa","5":"0.87","6":"0","7":"0.597","8":"5.6","9":"7679","10":"1210822"},{"1":"161","2":"Eritrea","3":"68.77","4":"Africa","5":"0.74","6":"0","7":"0.492","8":"4.9","9":"1729","10":"3748902"},{"1":"162","2":"Saint Helena","3":"68.74","4":"Africa","5":"0.97","6":"0","7":"NA","8":"NA","9":"NA","10":"6.115"},{"1":"163","2":"Zambia","3":"68.43","4":"Africa","5":"0.85","6":"0","7":"0.565","8":"7.2","9":"3218","10":"20569738"},{"1":"164","2":"Ethiopia","3":"68.42","4":"Africa","5":"0.49","6":"1","7":"0.498","8":"3.2","9":"2361","10":"126527060"},{"1":"165","2":"Djibouti","3":"68.41","4":"Africa","5":"0.68","6":"0","7":"0.509","8":"4.1","9":"5025","10":"1136455"},{"1":"166","2":"Cameroon","3":"67.76","4":"Africa","5":"0.75","6":"0","7":"0.576","8":"6.2","9":"3621","10":"28647293"},{"1":"167","2":"Nigeria","3":"67.76","4":"Africa","5":"0.60","6":"1","7":"0.535","8":"7.2","9":"4790","10":"223804632"},{"1":"168","2":"Somalia","3":"67.67","4":"Africa","5":"0.38","6":"0","7":"NA","8":"NA","9":"NA","10":"18143379"},{"1":"169","2":"Morocco","3":"67.03","4":"Africa","5":"0.72","6":"1","7":"0.683","8":"5.9","9":"7303","10":"37840044"},{"1":"170","2":"Namibia","3":"66.19","4":"Africa","5":"0.91","6":"0","7":"0.615","8":"7.2","9":"8634","10":"2604172"},{"1":"171","2":"Dominica","3":"66.03","4":"Central America","5":"0.94","6":"0","7":"0.720","8":"8.1","9":"11488","10":"73.161"},{"1":"172","2":"Sao Tome and Principe","3":"65.22","4":"Africa","5":"0.92","6":"0","7":"0.618","8":"6.2","9":"4021","10":"231.856"},{"1":"173","2":"Congo","3":"64.92","4":"Africa","5":"0.77","6":"0","7":"0.571","8":"6.2","9":"2889","10":"6106869"},{"1":"174","2":"Saint Vincent and the Grenadines","3":"63.42","4":"Central America","5":"0.96","6":"0","7":"0.751","8":"10.8","9":"11961","10":"103.699"},{"1":"175","2":"Gabon","3":"62.97","4":"Africa","5":"0.83","6":"0","7":"0.706","8":"9.4","9":"13367","10":"2436567"},{"1":"176","2":"Congo Republic","3":"62.97","4":"Africa","5":"0.79","6":"0","7":"0.479","8":"7.0","9":"1076","10":"102262809"},{"1":"177","2":"Yemen","3":"62.86","4":"Asia","5":"0.70","6":"1","7":"0.455","8":"3.2","9":"1314","10":"34449825"},{"1":"178","2":"Belize","3":"62.55","4":"Central America","5":"0.83","6":"0","7":"0.683","8":"8.8","9":"6309","10":"410.825"},{"1":"179","2":"Central African Republic","3":"62.55","4":"Africa","5":"0.37","6":"0","7":"0.404","8":"4.3","9":"966","10":"5742316"},{"1":"180","2":"Honduras","3":"62.16","4":"Central America","5":"0.88","6":"0","7":"0.621","8":"7.1","9":"5298","10":"10593798"},{"1":"181","2":"Togo","3":"59.83","4":"Africa","5":"0.67","6":"0","7":"0.539","8":"5.0","9":"2167","10":"9053799"},{"1":"182","2":"Mali","3":"59.76","4":"Africa","5":"0.33","6":"0","7":"0.428","8":"2.3","9":"2133","10":"23293699"},{"1":"183","2":"Mauritania","3":"59.76","4":"Africa","5":"0.52","6":"0","7":"0.556","8":"4.9","9":"5075","10":"4862989"},{"1":"184","2":"South Sudan","3":"58.61","4":"Africa","5":"0.32","6":"0","7":"0.385","8":"5.7","9":"768","10":"11088796"},{"1":"185","2":"Ghana","3":"58.16","4":"Africa","5":"0.77","6":"1","7":"0.632","8":"8.3","9":"5745","10":"34121985"},{"1":"186","2":"Costa do Marfim","3":"58.16","4":"Africa","5":"0.43","6":"0","7":"NA","8":"NA","9":"NA","10":"28873034"},{"1":"187","2":"Guinea","3":"53.48","4":"Africa","5":"0.30","6":"0","7":"0.465","8":"2.2","9":"2481","10":"14190612"},{"1":"188","2":"Nicaragua","3":"52.69","4":"Central America","5":"0.82","6":"0","7":"0.667","8":"7.1","9":"5625","10":"7046311"},{"1":"189","2":"Gambia","3":"52.68","4":"Africa","5":"0.58","6":"0","7":"0.500","8":"4.6","9":"2172","10":"2773168"},{"1":"190","2":"Guatemala","3":"47.72","4":"Central America","5":"0.79","6":"2","7":"0.627","8":"5.7","9":"8723","10":"18092026"},{"1":"191","2":"Liberia","3":"45.07","4":"Africa","5":"0.48","6":"2","7":"0.481","8":"5.1","9":"1289","10":"5418377"},{"1":"192","2":"Sierra Leone","3":"45.07","4":"Africa","5":"0.48","6":"0","7":"0.477","8":"4.6","9":"1622","10":"8791092"},{"1":"193","2":"Nepal","3":"42.99","4":"Asia","5":"0.65","6":"0","7":"0.602","8":"5.1","9":"3877","10":"30896590"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 </div>
+<section id="introduction" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
+<p>Our project matters because studying average global IQ scores per country will give insight into the cognitive ability of populations around the world. This information can help researchers and policymakers understand the distribution of intellectual abilities on a global scale.</p>
+<p>Intelligence is often linked to economic productivity and social well-being. Analyzing IQ data can help researchers explore the relationship between average IQ scores and economic indicators, such as GDP per capita, employment rates, and innovation.</p>
+<p>Our project is about bringing awareness to the educational system and how it needs to be improved globally.</p>
+</section>
+<section id="data" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Data</h1>
+<section id="data-summary" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="data-summary"><span class="header-section-number">2.1</span> Data Summary</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">skim</span>(mpg) <span class="sc">%&gt;%</span> </span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>n_missing)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">skim</span>(IQ)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<table class="table table-sm table-striped">
+<table class="table table-sm table-striped small">
 <caption>Data summary</caption>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Name</td>
-<td style="text-align: left;">mpg</td>
+<td style="text-align: left;">IQ</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Number of rows</td>
-<td style="text-align: left;">234</td>
+<td style="text-align: left;">193</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Number of columns</td>
-<td style="text-align: left;">11</td>
+<td style="text-align: left;">10</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">_______________________</td>
@@ -272,11 +201,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tr>
 <tr class="even">
 <td style="text-align: left;">character</td>
-<td style="text-align: left;">6</td>
+<td style="text-align: left;">3</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">numeric</td>
-<td style="text-align: left;">5</td>
+<td style="text-align: left;">7</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">________________________</td>
@@ -289,10 +218,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tbody>
 </table>
 <p><strong>Variable type: character</strong></p>
-<table class="table table-sm table-striped">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 13%">
+<col style="width: 18%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 7%">
+<col style="width: 11%">
+<col style="width: 14%">
+</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
 <th style="text-align: right;">complete_rate</th>
 <th style="text-align: right;">min</th>
 <th style="text-align: right;">max</th>
@@ -303,78 +243,56 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">manufacturer</td>
+<td style="text-align: left;">Country</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">4</td>
-<td style="text-align: right;">10</td>
+<td style="text-align: right;">32</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">193</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Continent</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
 <td style="text-align: right;">15</td>
 <td style="text-align: right;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">model</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">22</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">38</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">trans</td>
-<td style="text-align: right;">1</td>
 <td style="text-align: right;">8</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">drv</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">fl</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: left;">Population - 2023</td>
 <td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
 <td style="text-align: right;">5</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">class</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">3</td>
 <td style="text-align: right;">10</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">7</td>
+<td style="text-align: right;">192</td>
 <td style="text-align: right;">0</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped">
+<table class="table table-sm table-striped small">
 <colgroup>
-<col style="width: 17%">
-<col style="width: 17%">
-<col style="width: 10%">
-<col style="width: 6%">
+<col style="width: 25%">
 <col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
+<col style="width: 11%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 5%">
 <col style="width: 6%">
 <col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 8%">
+<col style="width: 4%">
 </colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
 <th style="text-align: right;">complete_rate</th>
 <th style="text-align: right;">mean</th>
 <th style="text-align: right;">sd</th>
@@ -388,89 +306,164 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">displ</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">3.47</td>
-<td style="text-align: right;">1.29</td>
-<td style="text-align: right;">1.6</td>
-<td style="text-align: right;">2.4</td>
-<td style="text-align: right;">3.3</td>
-<td style="text-align: right;">4.6</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: left;">▇▆▆▃▁</td>
+<td style="text-align: left;">Rank</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">97.00</td>
+<td style="text-align: right;">55.86</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">49.00</td>
+<td style="text-align: right;">97.00</td>
+<td style="text-align: right;">145.00</td>
+<td style="text-align: right;">193.00</td>
+<td style="text-align: left;">▇▇▇▇▇</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">year</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">2003.50</td>
-<td style="text-align: right;">4.51</td>
-<td style="text-align: right;">1999.0</td>
-<td style="text-align: right;">1999.0</td>
-<td style="text-align: right;">2003.5</td>
-<td style="text-align: right;">2008.0</td>
-<td style="text-align: right;">2008</td>
-<td style="text-align: left;">▇▁▁▁▇</td>
+<td style="text-align: left;">Average IQ</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">82.05</td>
+<td style="text-align: right;">13.34</td>
+<td style="text-align: right;">42.99</td>
+<td style="text-align: right;">74.33</td>
+<td style="text-align: right;">82.24</td>
+<td style="text-align: right;">91.60</td>
+<td style="text-align: right;">106.48</td>
+<td style="text-align: left;">▁▂▇▇▆</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">cyl</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">5.89</td>
-<td style="text-align: right;">1.61</td>
-<td style="text-align: right;">4.0</td>
-<td style="text-align: right;">4.0</td>
-<td style="text-align: right;">6.0</td>
-<td style="text-align: right;">8.0</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: left;">▇▁▇▁▇</td>
+<td style="text-align: left;">Literacy Rate</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">0.86</td>
+<td style="text-align: right;">0.18</td>
+<td style="text-align: right;">0.19</td>
+<td style="text-align: right;">0.80</td>
+<td style="text-align: right;">0.95</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: left;">▁▁▁▂▇</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">cty</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">16.86</td>
-<td style="text-align: right;">4.26</td>
-<td style="text-align: right;">9.0</td>
-<td style="text-align: right;">14.0</td>
-<td style="text-align: right;">17.0</td>
-<td style="text-align: right;">19.0</td>
-<td style="text-align: right;">35</td>
-<td style="text-align: left;">▆▇▃▁▁</td>
+<td style="text-align: left;">Nobel Prices</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">5.92</td>
+<td style="text-align: right;">31.97</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">400.00</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">hwy</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">23.44</td>
-<td style="text-align: right;">5.95</td>
-<td style="text-align: right;">12.0</td>
-<td style="text-align: right;">18.0</td>
-<td style="text-align: right;">24.0</td>
-<td style="text-align: right;">27.0</td>
-<td style="text-align: right;">44</td>
-<td style="text-align: left;">▅▅▇▁▁</td>
+<td style="text-align: left;">HDI (2021)</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">0.93</td>
+<td style="text-align: right;">0.72</td>
+<td style="text-align: right;">0.15</td>
+<td style="text-align: right;">0.38</td>
+<td style="text-align: right;">0.60</td>
+<td style="text-align: right;">0.74</td>
+<td style="text-align: right;">0.84</td>
+<td style="text-align: right;">0.96</td>
+<td style="text-align: left;">▃▅▆▇▇</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mean years of schooling - 2021</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">0.93</td>
+<td style="text-align: right;">9.03</td>
+<td style="text-align: right;">3.19</td>
+<td style="text-align: right;">2.10</td>
+<td style="text-align: right;">6.40</td>
+<td style="text-align: right;">9.40</td>
+<td style="text-align: right;">11.60</td>
+<td style="text-align: right;">14.10</td>
+<td style="text-align: left;">▃▅▆▇▇</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GNI - 2021</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">0.93</td>
+<td style="text-align: right;">20811.80</td>
+<td style="text-align: right;">22160.49</td>
+<td style="text-align: right;">732.00</td>
+<td style="text-align: right;">4593.00</td>
+<td style="text-align: right;">12672.00</td>
+<td style="text-align: right;">30588.00</td>
+<td style="text-align: right;">146830.00</td>
+<td style="text-align: left;">▇▂▁▁▁</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 </section>
-<section id="mpg-and-a-type-of-cars" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="mpg-and-a-type-of-cars"><span class="header-section-number">2.2</span> MPG and a Type of Cars</h2>
-<p>The following boxplot shows how the distribution of highway MPG (<code>hwy</code>) varies by a type of cars (<code>class</code>) <span class="emoji" data-emoji="blue_car">🚙</span> <span class="emoji" data-emoji="truck">🚚</span> <span class="emoji" data-emoji="minibus">🚐</span>.</p>
+<section id="data-visualization" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="data-visualization"><span class="header-section-number">2.2</span> Data Visualization</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> mpg) <span class="sc">+</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> class, <span class="at">y =</span> hwy, <span class="at">fill =</span> class),</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>               <span class="at">show.legend =</span> F) <span class="sc">+</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Class"</span>, <span class="at">y =</span> <span class="st">"Highway</span><span class="sc">\n</span><span class="st">MPG"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> IQ) <span class="sc">+</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a> <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Continent, <span class="at">y =</span> (<span class="st">`</span><span class="at">Average IQ</span><span class="st">`</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="project_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="864"></p>
+<p><img src="quarto-template-2_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="864"></p>
 </div>
 </div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> IQ)<span class="sc">+</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span> (<span class="fu">aes</span>( <span class="at">x=</span> <span class="st">`</span><span class="at">Literacy Rate</span><span class="st">`</span>, <span class="at">y =</span> <span class="st">`</span><span class="at">Mean years of schooling - 2021</span><span class="st">`</span>, <span class="at">color =</span> Continent))<span class="sc">+</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="fu">aes</span>( <span class="at">x=</span> <span class="st">`</span><span class="at">Literacy Rate</span><span class="st">`</span>, <span class="at">y =</span> <span class="st">`</span><span class="at">Mean years of schooling - 2021</span><span class="st">`</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="quarto-template-2_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="864"></p>
+</div>
+</div>
+<ul>
+<li>From the first graph you’ll notice differences in the average IQ of each continent. In the second graph a possible reason as to why this could be happening is focused upon. It shows that in continents with low average IQ’s there is generally less schooling.</li>
+</ul>
+</section>
+<section id="data-transformation" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="data-transformation"><span class="header-section-number">2.3</span> Data Transformation</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>Top10 <span class="ot">&lt;-</span> IQ <span class="sc">%&gt;%</span> </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Country, <span class="st">`</span><span class="at">Nobel Prices</span><span class="st">`</span>)<span class="sc">%&gt;%</span> </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="st">`</span><span class="at">Nobel Prices</span><span class="st">`</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="st">`</span><span class="at">Nobel Prices</span><span class="st">`</span> <span class="sc">&gt;</span><span class="dv">5</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(<span class="st">`</span><span class="at">Nobel Prices</span><span class="st">`</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell-output-display">
 
-
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["Country"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Nobel Prices"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"United States","2":"400"},{"1":"United Kingdom","2":"137"},{"1":"Germany","2":"111"},{"1":"France","2":"71"},{"1":"Sweden","2":"32"},{"1":"Japan","2":"29"},{"1":"Canada","2":"28"},{"1":"Switzerland","2":"27"},{"1":"Austria","2":"22"},{"1":"Netherlands","2":"22"},{"1":"Italy","2":"21"},{"1":"Poland","2":"19"},{"1":"Denmark","2":"13"},{"1":"Hungary","2":"13"},{"1":"Israel","2":"13"},{"1":"Norway","2":"13"},{"1":"Australia","2":"12"},{"1":"India","2":"12"},{"1":"Belgium","2":"11"},{"1":"Ireland","2":"11"},{"1":"South Africa","2":"11"},{"1":"China","2":"8"},{"1":"Spain","2":"8"},{"1":"Czech republic","2":"6"},{"1":"Ukraine","2":"6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../Documents/DANL%20Project/2795585-article-what-is-a-genius-iq-scoreecf71fe1-aadb-424b-b6ce-9a15002d2fdd-5a56782989eacc003758bb57.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">IQ Scores</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
 </section>
+<section id="references" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> References</h1>
+<ul>
+<li><p><a href="https://www.kaggle.com/datasets/mlippo/average-global-iq-per-country-with-other-stats/data" class="uri">https://www.kaggle.com/datasets/mlippo/average-global-iq-per-country-with-other-stats/data</a></p></li>
+<li><p><a href="https://quarto.org/docs/websites/" class="uri">https://quarto.org/docs/websites/</a></p></li>
+<li><p><a href="http://r4ds.hadley.nz">R for Data Science</a> by <a href="https://hadley.nz">Hadley Wickham</a></p></li>
+</ul>
+<!-- -->
 
-</main> <!-- /main -->
-<script type="text/javascript" src="links.js"></script>
+</section>
+
+</main>
+<!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -491,121 +484,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const disableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'prefetch';
-    }
-  }
-  const enableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'stylesheet';
-    }
-  }
-  const manageTransitions = (selector, allowTransitions) => {
-    const els = window.document.querySelectorAll(selector);
-    for (let i=0; i < els.length; i++) {
-      const el = els[i];
-      if (allowTransitions) {
-        el.classList.remove('notransition');
-      } else {
-        el.classList.add('notransition');
-      }
-    }
-  }
-  const toggleColorMode = (alternate) => {
-    // Switch the stylesheets
-    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-    manageTransitions('#quarto-margin-sidebar .nav-link', false);
-    if (alternate) {
-      enableStylesheet(alternateStylesheets);
-      for (const sheetNode of alternateStylesheets) {
-        if (sheetNode.id === "quarto-bootstrap") {
-          toggleBodyColorMode(sheetNode);
-        }
-      }
-    } else {
-      disableStylesheet(alternateStylesheets);
-      toggleBodyColorPrimary();
-    }
-    manageTransitions('#quarto-margin-sidebar .nav-link', true);
-    // Switch the toggles
-    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-    for (let i=0; i < toggles.length; i++) {
-      const toggle = toggles[i];
-      if (toggle) {
-        if (alternate) {
-          toggle.classList.add("alternate");     
-        } else {
-          toggle.classList.remove("alternate");
-        }
-      }
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455)
-    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-      manageTransitions("body", false);
-      window.scrollTo(0, 1);
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-        manageTransitions("body", true);
-      }, 40);  
-    }
-  }
-  const isFileUrl = () => { 
-    return window.location.protocol === 'file:';
-  }
-  const hasAlternateSentinel = () => {  
-    let styleSentinel = getColorSchemeSentinel();
-    if (styleSentinel !== null) {
-      return styleSentinel === "alternate";
-    } else {
-      return false;
-    }
-  }
-  const setStyleSentinel = (alternate) => {
-    const value = alternate ? "alternate" : "default";
-    if (!isFileUrl()) {
-      window.localStorage.setItem("quarto-color-scheme", value);
-    } else {
-      localAlternateSentinel = value;
-    }
-  }
-  const getColorSchemeSentinel = () => {
-    if (!isFileUrl()) {
-      const storageValue = window.localStorage.getItem("quarto-color-scheme");
-      return storageValue != null ? storageValue : localAlternateSentinel;
-    } else {
-      return localAlternateSentinel;
-    }
-  }
-  let localAlternateSentinel = 'default';
-  // Dark / light mode switch
-  window.quartoToggleColorScheme = () => {
-    // Read the current dark / light value 
-    let toAlternate = !hasAlternateSentinel();
-    toggleColorMode(toAlternate);
-    setStyleSentinel(toAlternate);
-  };
-  // Ensure there is a toggle, if there isn't float one in the top right
-  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-    const a = window.document.createElement('a');
-    a.classList.add('top-right');
-    a.classList.add('quarto-color-scheme-toggle');
-    a.href = "";
-    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-    const i = window.document.createElement("i");
-    i.classList.add('bi');
-    a.appendChild(i);
-    window.document.body.appendChild(a);
-  }
-  // Switch to dark mode if need be
-  if (hasAlternateSentinel()) {
-    toggleColorMode(true);
-  } else {
-    toggleColorMode(false);
-  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -613,9 +491,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -651,6 +543,57 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
   function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
@@ -680,6 +623,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -718,13 +747,128 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb6" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "DANL Project: Team 19"</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="an">editor:</span><span class="co"> visual </span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "World IQ"</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> </span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co">  - name: Sianny Ortiz</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">    affiliations:</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co">      - name: SUNY Geneseo</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co">  - name: Dominic Nicastro  </span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co">    affiliations:</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co">      - name: SUNY Geneseo</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co">  - name: Matthew Velez-Brand</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="co">    affiliations: </span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co">      - name: SUNY Geneseo </span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="co">  </span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "`r Sys.Date()`"</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="co">    number-sections: true</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: false       # https://quarto.org/docs/output-formats/html-code.html</span></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a><span class="co">    code-summary: "Show the code"</span></span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a><span class="co">    highlight-style: espresso # atom-one tango espresso</span></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span><span class="co"> </span></span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: true</span></span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a><span class="co">  eval: true</span></span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a><span class="co">  warning: false</span></span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a><span class="co">  message: false</span></span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a><span class="co">  fig-width: 9</span></span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a><span class="in">```{r setup, include = FALSE}</span></span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(hrbrthemes)</span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(skimr)</span>
+<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a>IQ <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">'/Users/dominicnicastro/Downloads/avgIQpercountry.csv'</span>)</span>
+<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-46"><a href="#cb6-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-49"><a href="#cb6-49" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb6-50"><a href="#cb6-50" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: asis</span></span>
+<span id="cb6-51"><a href="#cb6-51" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb6-52"><a href="#cb6-52" aria-hidden="true" tabindex="-1"></a>rmarkdown<span class="sc">::</span><span class="fu">paged_table</span>(IQ) </span>
+<span id="cb6-53"><a href="#cb6-53" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-54"><a href="#cb6-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-55"><a href="#cb6-55" aria-hidden="true" tabindex="-1"></a><span class="fu"># Introduction</span></span>
+<span id="cb6-56"><a href="#cb6-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-57"><a href="#cb6-57" aria-hidden="true" tabindex="-1"></a>Our project matters because studying average global IQ scores per country will give insight into the cognitive ability of populations around the world. This information can help researchers and policymakers understand the distribution of intellectual abilities on a global scale.</span>
+<span id="cb6-58"><a href="#cb6-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-59"><a href="#cb6-59" aria-hidden="true" tabindex="-1"></a>Intelligence is often linked to economic productivity and social well-being. Analyzing IQ data can help researchers explore the relationship between average IQ scores and economic indicators, such as GDP per capita, employment rates, and innovation.</span>
+<span id="cb6-60"><a href="#cb6-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-61"><a href="#cb6-61" aria-hidden="true" tabindex="-1"></a>Our project is about bringing awareness to the educational system and how it needs to be improved globally.</span>
+<span id="cb6-62"><a href="#cb6-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-63"><a href="#cb6-63" aria-hidden="true" tabindex="-1"></a><span class="fu"># Data</span></span>
+<span id="cb6-64"><a href="#cb6-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-65"><a href="#cb6-65" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Summary</span></span>
+<span id="cb6-66"><a href="#cb6-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-69"><a href="#cb6-69" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb6-70"><a href="#cb6-70" aria-hidden="true" tabindex="-1"></a><span class="fu">skim</span>(IQ)</span>
+<span id="cb6-71"><a href="#cb6-71" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-72"><a href="#cb6-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-73"><a href="#cb6-73" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Visualization</span></span>
+<span id="cb6-74"><a href="#cb6-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-77"><a href="#cb6-77" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb6-78"><a href="#cb6-78" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> IQ) <span class="sc">+</span></span>
+<span id="cb6-79"><a href="#cb6-79" aria-hidden="true" tabindex="-1"></a> <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Continent, <span class="at">y =</span> (<span class="st">`</span><span class="at">Average IQ</span><span class="st">`</span>)))</span>
+<span id="cb6-80"><a href="#cb6-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-81"><a href="#cb6-81" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-82"><a href="#cb6-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-85"><a href="#cb6-85" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb6-86"><a href="#cb6-86" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> IQ)<span class="sc">+</span></span>
+<span id="cb6-87"><a href="#cb6-87" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span> (<span class="fu">aes</span>( <span class="at">x=</span> <span class="st">`</span><span class="at">Literacy Rate</span><span class="st">`</span>, <span class="at">y =</span> <span class="st">`</span><span class="at">Mean years of schooling - 2021</span><span class="st">`</span>, <span class="at">color =</span> Continent))<span class="sc">+</span></span>
+<span id="cb6-88"><a href="#cb6-88" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="fu">aes</span>( <span class="at">x=</span> <span class="st">`</span><span class="at">Literacy Rate</span><span class="st">`</span>, <span class="at">y =</span> <span class="st">`</span><span class="at">Mean years of schooling - 2021</span><span class="st">`</span>))</span>
+<span id="cb6-89"><a href="#cb6-89" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb6-90"><a href="#cb6-90" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-91"><a href="#cb6-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-92"><a href="#cb6-92" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>From the first graph you'll notice differences in the average IQ of each continent. In the second graph a possible reason as to why this could be happening is focused upon. It shows that in continents with low average IQ's there is generally less schooling.</span>
+<span id="cb6-93"><a href="#cb6-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-94"><a href="#cb6-94" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Transformation</span></span>
+<span id="cb6-95"><a href="#cb6-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-98"><a href="#cb6-98" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb6-99"><a href="#cb6-99" aria-hidden="true" tabindex="-1"></a>Top10 <span class="ot">&lt;-</span> IQ <span class="sc">%&gt;%</span> </span>
+<span id="cb6-100"><a href="#cb6-100" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Country, <span class="st">`</span><span class="at">Nobel Prices</span><span class="st">`</span>)<span class="sc">%&gt;%</span> </span>
+<span id="cb6-101"><a href="#cb6-101" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="st">`</span><span class="at">Nobel Prices</span><span class="st">`</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb6-102"><a href="#cb6-102" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="st">`</span><span class="at">Nobel Prices</span><span class="st">`</span> <span class="sc">&gt;</span><span class="dv">5</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-103"><a href="#cb6-103" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(<span class="st">`</span><span class="at">Nobel Prices</span><span class="st">`</span>))</span>
+<span id="cb6-104"><a href="#cb6-104" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb6-105"><a href="#cb6-105" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-106"><a href="#cb6-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-109"><a href="#cb6-109" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb6-110"><a href="#cb6-110" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: asis</span></span>
+<span id="cb6-111"><a href="#cb6-111" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb6-112"><a href="#cb6-112" aria-hidden="true" tabindex="-1"></a>rmarkdown<span class="sc">::</span><span class="fu">paged_table</span>(Top10) </span>
+<span id="cb6-113"><a href="#cb6-113" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-114"><a href="#cb6-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-115"><a href="#cb6-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-118"><a href="#cb6-118" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb6-119"><a href="#cb6-119" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb6-120"><a href="#cb6-120" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: IQ Scores</span></span>
+<span id="cb6-121"><a href="#cb6-121" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "IQ Scores"</span></span>
+<span id="cb6-122"><a href="#cb6-122" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-width: 1</span></span>
+<span id="cb6-123"><a href="#cb6-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-124"><a href="#cb6-124" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"/Users/dominicnicastro/Documents/DANL Project/2795585-article-what-is-a-genius-iq-scoreecf71fe1-aadb-424b-b6ce-9a15002d2fdd-5a56782989eacc003758bb57.png"</span>)</span>
+<span id="cb6-125"><a href="#cb6-125" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-126"><a href="#cb6-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-127"><a href="#cb6-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-128"><a href="#cb6-128" aria-hidden="true" tabindex="-1"></a><span class="fu"># References</span></span>
+<span id="cb6-129"><a href="#cb6-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-130"><a href="#cb6-130" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="ot">&lt;https://www.kaggle.com/datasets/mlippo/average-global-iq-per-country-with-other-stats/data&gt;</span></span>
+<span id="cb6-131"><a href="#cb6-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-132"><a href="#cb6-132" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="ot">&lt;https://quarto.org/docs/websites/&gt;</span></span>
+<span id="cb6-133"><a href="#cb6-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-134"><a href="#cb6-134" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="co">[</span><span class="ot">R for Data Science</span><span class="co">](http://r4ds.hadley.nz)</span> by <span class="co">[</span><span class="ot">Hadley Wickham</span><span class="co">](https://hadley.nz)</span></span>
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-      <div class="nav-footer-center">Powered with GitHub and Quarto<br>© YOUR NAME, 2023</div>
-  </div>
-</footer>
 
 
 
