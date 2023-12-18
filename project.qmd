@@ -1,92 +1,120 @@
 ---
-title: DANL Project
-subtitle: "Data-Driven Mastery: Unlocking Business Potential"
+title: "DANL Project: Team 19"
+editor: visual 
+subtitle: "World IQ"
 author: 
-  - Name 1
-  - Name 2
-  - Name 3
-  - Name 4
-  - Name 5
+  - name: Sianny Ortiz
+    affiliations:
+      - name: SUNY Geneseo
+  - name: Dominic Nicastro  
+    affiliations:
+      - name: SUNY Geneseo
+  - name: Matthew Velez-Brand
+    affiliations: 
+      - name: SUNY Geneseo 
+  
+date: "`r Sys.Date()`"
+format: 
+  html:
+    toc: true
+    number-sections: true
+    code-fold: false       # https://quarto.org/docs/output-formats/html-code.html
+    code-summary: "Show the code"
+    code-tools: true
+    highlight-style: espresso # atom-one tango espresso
 
-toc: true
-toc-title: "Table of Contents"
-toc-depth: 2
-number-sections: true
-
-fig-width: 9
-
-execute:
-  code-tools: true
-  message: false
+execute: 
+  echo: true
+  eval: true
   warning: false
-
-from: markdown+emoji
+  message: false
+  fig-width: 9
 ---
-```{r setup}
-#| include: false
+
+```{r setup, include = FALSE}
 library(tidyverse)
-library(skimr)
-library(ggthemes)
 library(hrbrthemes)
-
-theme_set(theme_ipsum()+
-          theme(strip.background =element_rect(fill="lightgray"),
-                axis.title.x = 
-                  element_text(angle = 0,
-                               size = rel(1.33),
-                               margin = margin(10,0,0,0)),
-                axis.title.y = 
-                  element_text(angle = 0,
-                               size = rel(1.33),
-                               margin = margin(0,10,0,0))
-                )
-          )
+library(skimr)
+library(ggplot2)
 ```
 
-
-
-# Introduction
-
-About this project :clap:
-
 ```{r}
-1 + 1
-```
-
-
-# Data
-
-The data.frame `mpg` contains a subset of the fuel economy data that the EPA makes available on [https://fueleconomy.gov/](https://fueleconomy.gov/). It contains only models which had a new release every year between 1999 and 2008 - this was used as a proxy for the popularity of the car. :oncoming_automobile:
-
-
-## Summary Statistics
-
-```{r}
-mpg <- ggplot2::mpg
+IQ <- read_csv('/Users/dominicnicastro/Downloads/avgIQpercountry.csv')
 ```
 
 ```{r}
 #| results: asis
 #| echo: false
-rmarkdown::paged_table(mpg) 
+rmarkdown::paged_table(IQ) 
+```
+
+# Introduction
+
+Our project matters because studying average global IQ scores per country will give insight into the cognitive ability of populations around the world. This information can help researchers and policymakers understand the distribution of intellectual abilities on a global scale.
+
+Intelligence is often linked to economic productivity and social well-being. Analyzing IQ data can help researchers explore the relationship between average IQ scores and economic indicators, such as GDP per capita, employment rates, and innovation.
+
+Our project is about bringing awareness to the educational system and how it needs to be improved globally.
+
+# Data
+
+## Data Summary
+
+```{r}
+skim(IQ)
+```
+
+## Data Visualization
+
+```{r}
+ggplot(data = IQ) +
+ geom_boxplot(aes(x = Continent, y = (`Average IQ`)))
+
+```
+
+```{r}
+ggplot(data = IQ)+
+  geom_point (aes( x= `Literacy Rate`, y = `Mean years of schooling - 2021`, color = Continent))+
+  geom_smooth(aes( x= `Literacy Rate`, y = `Mean years of schooling - 2021`))
+  
+```
+
+-   From the first graph you'll notice differences in the average IQ of each continent. In the second graph a possible reason as to why this could be happening is focused upon. It shows that in continents with low average IQ's there is generally less schooling.
+
+## Data Transformation
+
+```{r}
+Top10 <- IQ %>% 
+  group_by(Country, `Nobel Prices`)%>% 
+  summarize(`Nobel Prices`) %>%
+  filter(`Nobel Prices` >5) %>% 
+  arrange(desc(`Nobel Prices`))
+  
+```
+
+```{r}
+#| results: asis
+#| echo: false
+rmarkdown::paged_table(Top10) 
 ```
 
 
 ```{r}
-skim(mpg) %>% 
-  select(-n_missing)
+#| echo: false
+#| label: IQ Scores
+#| fig-cap: "IQ Scores"
+#| fig-width: 1
+
+knitr::include_graphics("/Users/dominicnicastro/Documents/DANL Project/2795585-article-what-is-a-genius-iq-scoreecf71fe1-aadb-424b-b6ce-9a15002d2fdd-5a56782989eacc003758bb57.png")
 ```
 
 
-## MPG and a Type of Cars
-The following boxplot shows how the distribution of highway MPG (`hwy`) varies by a type of cars (`class`) :blue_car: :truck: :minibus:.
+# References
 
+-   <https://www.kaggle.com/datasets/mlippo/average-global-iq-per-country-with-other-stats/data>
 
-```{r}
-ggplot(data = mpg) +
-  geom_boxplot(aes(x = class, y = hwy, fill = class),
-               show.legend = F) +
-  labs(x = "Class", y = "Highway\nMPG") 
-```
+-   <https://quarto.org/docs/websites/>
+
+-   [R for Data Science](http://r4ds.hadley.nz) by [Hadley Wickham](https://hadley.nz)
 
 
